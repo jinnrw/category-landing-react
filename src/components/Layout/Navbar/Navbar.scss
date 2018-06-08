@@ -1,31 +1,22 @@
-$color: pink;
-
-.App {
-  text-align: center;
+.nav {
+  background-color: #3071a9;
+  height: 40px;
+  padding: 0 15px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
+.nav-list {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  font-size: 16px;
+  line-height: 40px;
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
+  .nav-link {
+    padding: 0 10px;
 
-.App-title {
-  font-size: 1.5em;
-  color: $color;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
 }

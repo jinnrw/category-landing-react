@@ -5,7 +5,11 @@ class Navbar extends Component {
   render() {
     return (
       <div className="nav">
-        <h1>Navigation</h1>  
+        <ul className="nav-list">
+          <li className="nav-link"><a href="">Link</a></li>
+          <li className="nav-link"><a href="">Link</a></li>
+          <li className="nav-link"><a href="">Link</a></li>
+        </ul>
       </div>
     );
   }
