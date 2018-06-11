@@ -4,7 +4,7 @@ import './Footer.scss';
 class Footer extends Component {
   render() {
     return(
-      <div id="footer">
+      <footer id="footer">
         <div className="footer-list">
           <ul className="footer-links">
             <h4 className="footer-subtitle">Quick Links</h4>
@@ -21,7 +21,7 @@ class Footer extends Component {
             <li className="footer-link"><a href="">link</a></li>
           </ul>
         </div>
-      </div>
+      </footer>
     );
   }
 }
