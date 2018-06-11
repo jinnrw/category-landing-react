@@ -3,19 +3,28 @@
 }
 
 .footer-list {
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   max-width: 1440px;
   margin: 0 auto;
 }
 
 .footer-links {
+  padding: 0 10px;
 
   .footer-subtitle {
-    color: #424242;
+    color: #333;
+    font-size: 1.25rem;
+    padding-bottom: 10px;
   }
   
   a {
     color: #777;
     text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

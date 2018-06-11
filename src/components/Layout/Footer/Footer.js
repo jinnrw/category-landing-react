@@ -4,24 +4,24 @@ import './Footer.scss';
 class Footer extends Component {
   render() {
     return(
-      <div id="footer">
+      <footer id="footer">
         <div className="footer-list">
-          <ul className="footer-links">
-            <h4 className="footer-subtitle">Quick Links</h4>
+          <ol className="footer-links">
+            <li className="footer-subtitle"><span>Quick Links</span></li>
             <li className="footer-link"><a href="">link</a></li>
             <li className="footer-link"><a href="">link</a></li>
             <li className="footer-link"><a href="">link</a></li>
             <li className="footer-link"><a href="">link</a></li>
-          </ul>
-          <ul className="footer-links">
-            <h4 className="footer-subtitle">About Costco</h4>
+          </ol>
+          <ol className="footer-links">
+            <li className="footer-subtitle"><span>About Us</span></li>
             <li className="footer-link"><a href="">link</a></li>
             <li className="footer-link"><a href="">link</a></li>
             <li className="footer-link"><a href="">link</a></li>
             <li className="footer-link"><a href="">link</a></li>
-          </ul>
+          </ol>
         </div>
-      </div>
+      </footer>
     );
   }
 }
