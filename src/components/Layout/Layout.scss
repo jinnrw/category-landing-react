@@ -17,9 +17,21 @@
 .App {
 }
 
+body {
+	background-color: #eee;
+}
+
 header {
   background-color: #eee;
   padding: 0;
+}
+
+main {
+	background-color: #fff;
+	padding: 20px 0;
+	h1 {
+		margin: 0;
+	}
 }
 
 .nav-main {
