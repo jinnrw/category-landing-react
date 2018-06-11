@@ -4,6 +4,7 @@ import './Layout.scss';
 import Navbar from './Navbar/Navbar';
 import Footer from './Footer/Footer';
 import Marketing from '../Marketing/Marketing';
+import ImageScroll from '../ImageScroll/ImageScroll';
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
         </header>  
         <Navbar />
         <Marketing />
+        <ImageScroll />
         <Footer />
       </div>
     );
