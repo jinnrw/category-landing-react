@@ -10,6 +10,10 @@ class Navbar extends Component {
           <li className="nav-link"><a href="">Link</a></li>
           <li className="nav-link"><a href="">Link</a></li>
         </ul>
+        <button className="mobile-menu-btn">
+          <span className="visuallyhidden">Mobile menu button</span>
+          <span className="lines"></span>
+        </button>
       </nav>
     );
   }
