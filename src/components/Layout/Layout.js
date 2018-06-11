@@ -20,8 +20,8 @@ class App extends Component {
         </header>
         <main>
           <Marketing />
+          <ImageScroll />
         </main>
-        <ImageScroll />
         <Footer />
       </div>
     );
