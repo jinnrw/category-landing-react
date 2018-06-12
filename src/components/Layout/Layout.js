@@ -21,9 +21,9 @@ class App extends Component {
         </header>
         <main>
           <Marketing />
+          <ImageScroll />
+          <Slider />
         </main>
-        <ImageScroll />
-        <Slider />
         <Footer />
       </div>
     );

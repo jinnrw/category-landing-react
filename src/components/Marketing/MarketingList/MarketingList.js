@@ -3,10 +3,12 @@ import React, { Component } from 'react';
 class MarketingList extends Component {
   render() {
     return(
-      <div className="marketing-list">
-        <img alt=""/>
-        <h1>{ this.props.title }</h1>  
-      </div>
+      <li className="marketing-list">
+        <figure>
+          <img src="http://placehold.it/300x200" alt="" />
+          <figcaption>{ this.props.title }</figcaption>  
+        </figure>
+      </li>
     );
   }
 }
