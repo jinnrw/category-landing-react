@@ -1,5 +1,6 @@
 .nav {
   background-color: #3071a9;
+  background-color: var(--NAVBAR-BKG);
   height: 40px;
   padding: 0;
 }
@@ -55,6 +56,7 @@
   font-size: 16px;
   line-height: 40px;
   max-width: 1440px;
+  max-width: var(--SITE-WIDTH);
   margin: 0 auto;
   padding: 0;
 

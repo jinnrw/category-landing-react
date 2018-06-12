@@ -1,5 +1,37 @@
 :root {
-	--BODY-COLOR: var(--body-color, #fff);
+	--SITE-WIDTH: var(--site-width, 1190px);
+
+	--PAGE-BKG: var(--page-bkg, #eee);
+	--HEADER-BKG: var(--header-bkg, #eee);
+	--NAVBAR-BKG: var(--navbar-bkg, #3071a9);
+	--CONTENT-BKG: var(--content-bkg, #fff);
+	--FOOTER-SUBTITLE: var(--footer-subtitle, #333);
+	--FOOTER-LINK: var(--footer-link, #777);
+
+	/* THEMING */
+	/* Default */
+
+	--site-width: 1440px;
+
+	--page-bkg: #eee;
+	--header-bkg: #eee;
+	--navbar-bkg: #3071a9;
+	--content-bkg: #fff;
+	--footer-subtitle: #333;
+	--footer-link: #777;
+
+
+	/* SAMUS */
+	/*
+	--site-width: 1440px;
+
+	--page-bkg: #69a752;
+	--header-bkg: #084c8b;
+	--navbar-bkg: #69a752;
+	--content-bkg: #fff;
+	--footer-subtitle: #fff;
+	--footer-link: #fff;
+	*/
 }
 
 * {
@@ -22,17 +54,19 @@
 }
 
 body {
-	--body-color: green;
-	background-color: var(--BODY-COLOR);
+	background-color: #eee;
+	background-color: var(--PAGE-BKG);
 }
 
 header {
-  background-color: #eee;
+	background-color: #eee;
+  background-color: var(--HEADER-BKG);
   padding: 0;
 }
 
 main {
 	background-color: #fff;
+	background-color: var(--CONTENT-BKG);
 	padding: 20px 0;
 	h1 {
 		margin: 0;
@@ -40,7 +74,8 @@ main {
 }
 
 .nav-main {
-  max-width: 1440px;
+	max-width: 1440px;
+	max-width: var(--SITE-WIDTH);
   margin: 0 auto;
 
   .logo {
