@@ -5,6 +5,7 @@ import Navbar from './Navbar/Navbar';
 import Footer from './Footer/Footer';
 import Marketing from '../Marketing/Marketing';
 import ImageScroll from '../ImageScroll/ImageScroll';
+import Slider from '../Slider/Slider';
 
 class App extends Component {
   render() {
@@ -22,6 +23,7 @@ class App extends Component {
           <Marketing />
         </main>
         <ImageScroll />
+        <Slider />
         <Footer />
       </div>
     );

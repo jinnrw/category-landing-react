@@ -4,7 +4,7 @@ class MarketingList extends Component {
   render() {
     return(
       <div className="marketing-list">
-        <img />
+        <img alt=""/>
         <h1>{ this.props.title }</h1>  
       </div>
     );
