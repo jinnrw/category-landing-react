@@ -1,6 +1,7 @@
+@import "../../../global";
+
 #footer {
-  background-color: #eee;
-  background-color: var(--PAGE-BKG);
+  @include variable(background-color, --PAGE-BKG, #eee);
 }
 
 .footer-list {
@@ -8,8 +9,7 @@
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  max-width: 1440px;
-  max-width: var(--SITE-WIDTH);
+  @include variable(max-width, --SITE-WIDTH, 1440px);
   margin: 0 auto;
 }
 
@@ -17,15 +17,13 @@
   padding: 0 10px;
 
   .footer-subtitle {
-    color: #333;
-    color: var(--FOOTER-SUBTITLE);
+    @include variable(color, --FOOTER-SUBTITLE, #333);
     font-size: 1.25rem;
     padding-bottom: 10px;
   }
   
   a {
-    color: #777;
-    color: var(--FOOTER-LINK);
+    @include variable(color, --FOOTER-LINK, #777);
     text-decoration: none;
     &:hover {
       text-decoration: underline;
