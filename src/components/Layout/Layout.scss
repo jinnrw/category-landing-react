@@ -1,3 +1,5 @@
+@import "../../global";
+
 :root {
 	--SITE-WIDTH: var(--site-width, 1190px);
 
@@ -7,31 +9,6 @@
 	--CONTENT-BKG: var(--content-bkg, #fff);
 	--FOOTER-SUBTITLE: var(--footer-subtitle, #333);
 	--FOOTER-LINK: var(--footer-link, #777);
-
-	/* THEMING */
-	/* Default */
-
-	--site-width: 1440px;
-
-	--page-bkg: #eee;
-	--header-bkg: #eee;
-	--navbar-bkg: #3071a9;
-	--content-bkg: #fff;
-	--footer-subtitle: #333;
-	--footer-link: #777;
-
-
-	/* SAMUS */
-	/*
-	--site-width: 1440px;
-
-	--page-bkg: #69a752;
-	--header-bkg: #084c8b;
-	--navbar-bkg: #69a752;
-	--content-bkg: #fff;
-	--footer-subtitle: #fff;
-	--footer-link: #fff;
-	*/
 }
 
 * {
@@ -54,19 +31,16 @@
 }
 
 body {
-	background-color: #eee;
-	background-color: var(--PAGE-BKG);
+	@include variable(background-color, --PAGE-BKG, #eee);
 }
 
 header {
-	background-color: #eee;
-  background-color: var(--HEADER-BKG);
+	@include variable(background-color, --HEADER-BKG, #eee);
   padding: 0;
 }
 
 main {
-	background-color: #fff;
-	background-color: var(--CONTENT-BKG);
+	@include variable(background-color, --CONTENT-BKG, #fff);
 	padding: 20px 0;
 	h1 {
 		margin: 0;
@@ -74,8 +48,7 @@ main {
 }
 
 .nav-main {
-	max-width: 1440px;
-	max-width: var(--SITE-WIDTH);
+	@include variable(max-width, --SITE-WIDTH, 1440px);
   margin: 0 auto;
 
   .logo {
