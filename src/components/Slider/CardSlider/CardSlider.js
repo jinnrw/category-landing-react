@@ -31,7 +31,6 @@ class CardSlider extends Component {
       }
     );
 
-
     // init controller
     var controller = new $.ScrollMagic.Controller();
 
@@ -42,33 +41,23 @@ class CardSlider extends Component {
       .offset(300)
       // End of fixed pin
       .setTween(tween)
-      .addIndicators() // add indicators (requires plugin)
+      // .addIndicators() // add indicators (requires plugin)
       .addTo(controller);
-
-    // BOOK SLIDER
-
-    var slider2 = $.$('#book-slider_controller'),
-      sliderImg2 = $.$('#slider-image-book'),
-      sliderValue2 = slider2.value;
-
-    console.log(slider2)
-    // slider2[0].oninput = function () {
-    //   // Map slider value and image positioning
-    //   sliderImg2.css('background-position-y', this.value * (-20250 / 45))
-    // }
   }
 
   render() {
+    const isActive = this.props.isActive;
+
     return (
-      <div id="card-slider_container">
-        <div>
-          <h1 className="title">Business Cards</h1>
-          <p className="desc">Full color, double-sided printing on premium 16 pt card stock</p>
+        <div id="card-slider_container" >
+          <div>
+            <h1 className="title">Business Cards</h1>
+            <p className="desc">Full color, double-sided printing on premium 16 pt card stock</p>
+          </div>
+          <div className="container">
+            <div id="slider-image-card" className="container"></div>
+          </div>
         </div>
-        <div className="container">
-          <div id="slider-image-card" className="container"></div>
-        </div>
-      </div>
     );
   }
 }
