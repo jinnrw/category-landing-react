@@ -1,7 +1,7 @@
 @import "../../../global";
 
 #footer {
-  @include variable(background-color, --PAGE-BKG, #eee);
+  @include variable(background-color, --PAGE-BKG, $ie-page-bkg);
 }
 
 .footer-list {
@@ -17,13 +17,13 @@
   padding: 0 10px;
 
   .footer-subtitle {
-    @include variable(color, --FOOTER-SUBTITLE, #333);
+    @include variable(color, --FOOTER-SUBTITLE, $ie-footer-subtitle);
     font-size: 1.25rem;
     padding-bottom: 10px;
   }
   
   a {
-    @include variable(color, --FOOTER-LINK, #777);
+    @include variable(color, --FOOTER-LINK, $ie-footer-link);
     text-decoration: none;
     &:hover {
       text-decoration: underline;

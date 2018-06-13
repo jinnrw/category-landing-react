@@ -3,6 +3,8 @@
 :root {
 	--SITE-WIDTH: var(--site-width, 1190px);
 
+	--FONT-FAMILY: var(--font-family);
+
 	--PAGE-BKG: var(--page-bkg, #eee);
 	--HEADER-BKG: var(--header-bkg, #eee);
 	--NAVBAR-BKG: var(--navbar-bkg, #3071a9);
@@ -31,16 +33,17 @@
 }
 
 body {
-	@include variable(background-color, --PAGE-BKG, #eee);
+	@include variable(background-color, --PAGE-BKG, $ie-page-bkg);
 }
 
 header {
-	@include variable(background-color, --HEADER-BKG, #eee);
+	@include variable(background-color, --HEADER-BKG, $ie-header-bkg);
   padding: 0;
 }
 
 main {
-	@include variable(background-color, --CONTENT-BKG, #fff);
+	@include variable(background-color, --CONTENT-BKG, $ie-content-bkg);
+	display: block;
 	padding: 20px 0;
 	h1 {
 		margin: 0;
@@ -48,7 +51,7 @@ main {
 }
 
 .nav-main {
-	@include variable(max-width, --SITE-WIDTH, 1440px);
+	@include variable(max-width, --SITE-WIDTH, $ie-site-width);
   margin: 0 auto;
 
   .logo {

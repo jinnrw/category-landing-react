@@ -1,7 +1,7 @@
 @import "../../global";
 
 #marketing-workflow {
-  @include variable(max-width, --SITE-WIDTH, 1440px);
+  @include variable(max-width, --SITE-WIDTH, $ie-site-width);
   text-align: center;
   margin: 0 auto;
 }

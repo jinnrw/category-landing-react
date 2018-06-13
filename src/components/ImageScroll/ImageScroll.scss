@@ -1,5 +1,7 @@
+@import "../../global";
+
 .image-scroll {
-  max-width: 1440px;
+  @include variable(max-width, --SITE-WIDTH, $ie-site-width);
   text-align: center;
   margin: 0 auto;
 }
