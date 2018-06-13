@@ -6,27 +6,23 @@ class ImageScroll extends Component {
     this.scrollEvent();
   }
 
-  scrollEvent(){
-    
-    
+  scrollEvent(){      
     var controller = new window.ScrollMagic.Controller({
       globalSceneOptions: { // options for every scene
         triggerHook: 0.15
       },
     });	
     var tweenSceneEnter = new window.TimelineMax({});
-    tweenSceneEnter.fromTo("#mask", 0.5, {scale: 1},
+    tweenSceneEnter.fromTo("#mask", 1, {scale: 1},
                                         {scale: 2});
-    tweenSceneEnter.to("#background", 0.5, {scale: 2}, 0);
+    tweenSceneEnter.to("#background", 1, {scale: 2}, 0);
 
     var tweenSceneLeave = new window.TimelineMax({});
-    tweenSceneLeave.to("#mask", 0.5, {scale: 3.5});
-    tweenSceneLeave.to("#background", 0.5, {scale: 1}, 0.1);
-
-    
+    tweenSceneLeave.to("#mask", 1, {scale: 3.5});
+    tweenSceneLeave.to("#background", 2, {scale: 1}, 0.1);
 
     // Scene On Enter
-    new window.ScrollMagic.Scene({triggerElement: "#scene", duration: 300})
+    new window.ScrollMagic.Scene({triggerElement: "#scene", duration: 500})
         .offset(-10)
         .setPin('#scene')
         .setTween(tweenSceneEnter)
@@ -34,7 +30,7 @@ class ImageScroll extends Component {
         .addTo(controller)
 
     // Background onLeave
-    new window.ScrollMagic.Scene({triggerElement: "#scene", duration: 300, offset: 290})
+    new window.ScrollMagic.Scene({triggerElement: "#scene", duration: 500, offset: 490})
         .setPin('#scene')
         .setTween(tweenSceneLeave)
         // .addIndicators({name: "onLeave"}) // add indicators (requires plugin)
@@ -49,8 +45,8 @@ class ImageScroll extends Component {
 
         <div id="scene">
           <div>
-            <h1>Business Cards</h1>
-            <p>Full color, double-sided printing on premium 16 pt card stock</p>
+            <h1 className="title">Business Cards</h1>
+            <p className="desc">Full color, double-sided printing on premium 16 pt card stock</p>
           </div>
           <div id="background">
             <img 
