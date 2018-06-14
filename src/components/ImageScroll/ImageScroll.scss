@@ -4,6 +4,11 @@
   @include variable(max-width, --SITE-WIDTH, $ie-site-width);
   text-align: center;
   margin: 0 auto;
+  padding: 0 20px;
+}
+
+.image-scroll_title {
+  margin-bottom: 10px;
 }
 
 #scene {
@@ -26,9 +31,12 @@
 #background {
   position: relative;
   height: 450px;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   img {
-    height: 100%;
+    height: 110%;
     box-shadow: 0 1px 2px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.16), 0 0 2px rgba(255,255,255,.2) inset;
   }
 }

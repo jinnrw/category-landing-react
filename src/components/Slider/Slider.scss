@@ -3,3 +3,9 @@
   text-align: center;
   margin: 0 auto;
 }
+
+@media (max-width: 767px) {
+  #slider {
+    width: 100%;
+  }
+}

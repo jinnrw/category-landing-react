@@ -1,22 +1,30 @@
 #book-slider {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
+  padding: 0 20px;
 
   .container {
+    width: 100%;
+    height: 450px;
     margin-bottom: 20px;
   }
 }
 
 #slider-image-book {
+  width: 100%;
+  height: 100%;
   background-image: url(../../../images/book-slider.jpg);
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 50%;
 }
 
 #book-slider_controller {
   -webkit-appearance: none;
   width: 100%;
+  max-width: 800px;
   border-radius: 10px;
   background: #eee;
   outline: none;
@@ -42,5 +50,10 @@
     background: #2c3e50;
     cursor: pointer;
     transition: background .15s ease-in-out;
+  }
+}
+
+@media (max-width: 768px) {
+  #book-slider {
   }
 }
