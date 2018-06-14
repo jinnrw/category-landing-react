@@ -14,16 +14,14 @@ class BookSlider extends Component {
 
     return (
       <div id="book-slider" >
-        <div>
-          <div>
-            <h1 className="title">Business Cards</h1>
-            <p className="desc">Full color, double-sided printing on premium 16 pt card stock</p>
-          </div>
-          <div className="container">
-            <div id="slider-image-book" className="container" style={{ backgroundPositionY: this.state.bgPosition }}></div>
-          </div>
-          <input id="book-slider_controller" type="range" min="1" max="44" value={this.state.value} onChange={this.handleSlider} />
+        <div className="book-slider_title">
+          <h1 className="title">Photo Books</h1>
+          <p className="desc">The ultimate coffee-table addition, this 12x12 photo book is perfect for capturing life’s big moments.</p>
         </div>
+        <div className="container">
+          <div id="slider-image-book" style={{ backgroundPositionY: this.state.bgPosition }}></div>
+        </div>
+        <input id="book-slider_controller" type="range" min="1" max="44" value={this.state.value} onChange={this.handleSlider} />
       </div>
     );
   }
