@@ -4,9 +4,13 @@ $ie-site-width: 1440px;
 $ie-page-bkg: #69a752;
 $ie-header-bkg: #084c8b;
 $ie-navbar-bkg: #69a752;
+$ie-navbar-text: #fff;
 $ie-content-bkg: #fff;
 $ie-footer-subtitle: #fff;
 $ie-footer-link: #fff;
+
+$ie-mobilenav-bkg: #fff;
+$ie-mobilenav-text: #444;
 
 :root {
     --site-width: 1440px;
@@ -14,7 +18,11 @@ $ie-footer-link: #fff;
     --page-bkg: #69a752;
     --header-bkg: #084c8b;
     --navbar-bkg: #69a752;
+    --navbar-text: #fff;
     --content-bkg: #fff;
     --footer-subtitle: #fff;
     --footer-link: #fff;
+
+    --mobilenav-bkg: #fff;
+    --mobilenav-text: #444;
 }

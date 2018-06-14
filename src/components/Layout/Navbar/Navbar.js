@@ -5,10 +5,12 @@ class Navbar extends Component {
   render() {
     return (
       <nav className="nav">
-        <button className="mobile-menu-btn">
+        <label className="mobile-menu-btn" for="mobile-menu-toggle">
           <span className="visuallyhidden">Mobile menu button</span>
           <span className="lines"></span>
-        </button>
+        </label>
+        <input className="mobile-menu-toggle" type="checkbox" id="mobile-menu-toggle" />
+        {/* <span className="mobile-menu-btn-lines"></span> */}
         <ul className="nav-list">
           <li className="nav-link"><a href="">Link</a></li>
           <li className="nav-link"><a href="">Link</a></li>

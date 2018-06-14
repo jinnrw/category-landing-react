@@ -3,14 +3,16 @@
 :root {
 	--SITE-WIDTH: var(--site-width, 1190px);
 
-	--FONT-FAMILY: var(--font-family);
-
 	--PAGE-BKG: var(--page-bkg, #eee);
 	--HEADER-BKG: var(--header-bkg, #eee);
 	--NAVBAR-BKG: var(--navbar-bkg, #3071a9);
+	--NAVBAR-TEXT: var(--navbar-text, #fff);
 	--CONTENT-BKG: var(--content-bkg, #fff);
 	--FOOTER-SUBTITLE: var(--footer-subtitle, #333);
 	--FOOTER-LINK: var(--footer-link, #777);
+
+	--MOBILENAV-BKG: var(--mobilenav-bkg, #fff);
+	--MOBILENAV-TEXT: var(--mobilenav-text, #444);
 }
 
 * {
