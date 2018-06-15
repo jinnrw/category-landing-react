@@ -52,7 +52,19 @@ main {
 	}
 }
 
-.nav-main {
+.header-main {
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+			-ms-flex-align: center;
+					align-items: center;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+			-ms-flex-pack: justify;
+					justify-content: space-between;
 	@include variable(max-width, --SITE-WIDTH, $ie-site-width);
   margin: 0 auto;
 
@@ -63,6 +75,6 @@ main {
 			padding: 10px;
 			max-width: 200px;
     }
-  }
+	}
 }
 
