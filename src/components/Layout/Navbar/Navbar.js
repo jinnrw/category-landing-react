@@ -12,9 +12,9 @@ class Navbar extends Component {
         <input className="mobile-menu-toggle" type="checkbox" id="mobile-menu-toggle" />
         {/* <span className="mobile-menu-btn-lines"></span> */}
         <ul className="nav-list">
-          <li className="nav-link"><a href="">Link</a></li>
-          <li className="nav-link"><a href="">Link</a></li>
-          <li className="nav-link"><a href="">Link</a></li>
+          <li className="nav-link"><a href="">Image Scroll Demo</a></li>
+          <li className="nav-link"><a href="">Slider Demo</a></li>
+          <li className="nav-link"><a href="">Demo 3</a></li>
         </ul>
       </nav>
     );

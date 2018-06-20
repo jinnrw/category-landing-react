@@ -51,7 +51,7 @@ class CardSlider extends Component {
     return (
         <div id="card-slider_container" >
           <div>
-            <h1 className="title">Business Cards</h1>
+            <h2 className="title">Business Cards</h2>
             <p className="desc">Full color, double-sided printing on premium 16 pt card stock</p>
           </div>
           <div className="container">
