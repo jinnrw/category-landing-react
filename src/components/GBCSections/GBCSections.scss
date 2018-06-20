@@ -516,3 +516,25 @@
         }
     }
 }
+
+@media (max-width: 767px) {
+    .gift-banner {
+        display: none;
+    }
+
+    .product-tiles {
+        margin-top: 0;
+        .products {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-dierection: column;
+            flex-direction: column;
+            padding-bottom: 20px;
+            .item {
+                display: block;
+                height: auto;
+                width: 100%;
+            }
+        }
+    }
+}
