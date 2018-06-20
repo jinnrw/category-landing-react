@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
 import logo from '../../images/PhotoCenter_SB.png';
 import './Layout.scss';
 import Navbar from './Navbar/Navbar';
@@ -9,8 +11,6 @@ import GBCSection2 from '../GBCSections/GBCSection2';
 import GBCSection3 from '../GBCSections/GBCSection3';
 import GBCSection4 from '../GBCSections/GBCSection4';
 import Marketing from '../Marketing/Marketing';
-import ImageScroll from '../ImageScroll/ImageScroll';
-import Slider from '../Slider/Slider';
 
 
 class App extends Component {
@@ -19,18 +19,17 @@ class App extends Component {
       <div className="App">
         <header>
           <div className="header-main">
-            <a href="/" className="logo">
+            <Link to="/" className="logo">
               <img src={logo} alt="" />
-            </a>
+            </Link>
             {/* <ThemeSelector /> */}
           </div>
           <Navbar />
         </header>
         <main>
           <GBCSection1 />
-          <ImageScroll />
+          { this.props.children }
           <GBCSection2 />
-          <Slider />
           <GBCSection3 />
           <GBCSection4 />
           {/* <Marketing /> */}
