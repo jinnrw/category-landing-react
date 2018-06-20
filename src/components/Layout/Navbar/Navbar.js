@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Navbar.scss';
+import { Link } from 'react-router-dom';
 
 class Navbar extends Component {
   render() {
@@ -12,9 +13,9 @@ class Navbar extends Component {
         <input className="mobile-menu-toggle" type="checkbox" id="mobile-menu-toggle" />
         {/* <span className="mobile-menu-btn-lines"></span> */}
         <ul className="nav-list">
-          <li className="nav-link"><a href="">Image Scroll Demo</a></li>
-          <li className="nav-link"><a href="">Slider Demo</a></li>
-          <li className="nav-link"><a href="">Demo 3</a></li>
+          <li className="nav-link"><Link to="/">Shop All</Link></li>
+          <li className="nav-link"><Link to="slider">Slider Demo</Link></li>
+          <li className="nav-link"><Link to="slider">Product Demo</Link></li>
         </ul>
       </nav>
     );
