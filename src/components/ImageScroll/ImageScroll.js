@@ -44,7 +44,7 @@ class ImageScroll extends Component {
       <div className="image-scroll">
         <div id="scene">
           <div className="image-scroll_title">
-            <h1 className="title">Business Cards</h1>
+            <h2 className="title">Business Cards</h2>
             <p className="desc">Full color, double-sided printing on premium 16 pt card stock</p>
           </div>
           <div id="background">

@@ -15,7 +15,7 @@ class BookSlider extends Component {
     return (
       <div id="book-slider" >
         <div className="book-slider_title">
-          <h1 className="title">Photo Books</h1>
+          <h2 className="title">Photo Books</h2>
           <p className="desc">The ultimate coffee-table addition, this 12x12 photo book is perfect for capturing life’s big moments.</p>
         </div>
         <div className="container">
