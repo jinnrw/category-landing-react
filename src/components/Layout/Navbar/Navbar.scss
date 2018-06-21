@@ -146,6 +146,7 @@
     -o-transition: .3s all ease-in;
     transition: .3s all ease-in;
     width: 80%;
+    z-index: 1000;
 
     .nav-link {
       a {
