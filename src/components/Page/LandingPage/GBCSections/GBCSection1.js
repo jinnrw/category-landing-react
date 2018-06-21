@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import topbanner from '../../images/hero_siteB.png';
-import productbadge1 from '../../images/badgeleft_siteB.png';
-import productbadge2 from '../../images/badgeright_siteB.png';
+import topbanner from '../../../../images/hero_siteB.png';
+import productbadge1 from '../../../../images/badgeleft_siteB.png';
+import productbadge2 from '../../../../images/badgeright_siteB.png';
 import './GBCSections.scss';
 
 class GBCSection1 extends Component {

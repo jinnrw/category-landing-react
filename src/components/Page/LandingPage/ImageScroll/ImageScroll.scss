@@ -1,4 +1,4 @@
-@import "../../global";
+@import "../../../../global";
 
 .image-scroll {
   @include variable(max-width, --SITE-WIDTH, $ie-site-width);

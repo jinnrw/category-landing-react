@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import section4tile1 from '../../images/section-4-tile-1_siteB.png';
-import section4tile2 from '../../images/section-4-tile-2_siteB.png';
-import section4tile3 from '../../images/section-4-tile-3_siteB.png';
+import section4tile1 from '../../../../images/section-4-tile-1_siteB.png';
+import section4tile2 from '../../../../images/section-4-tile-2_siteB.png';
+import section4tile3 from '../../../../images/section-4-tile-3_siteB.png';
 import './GBCSections.scss';
 
 class GBCSection4 extends Component {
