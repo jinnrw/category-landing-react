@@ -13,15 +13,58 @@ class BookSlider extends Component {
     const isActive = this.props.isActive;
 
     return (
-      <div id="book-slider" >
-        <div className="book-slider_title">
-          <h2 className="title">Photo Books</h2>
-          <p className="desc">The ultimate coffee-table addition, this 12x12 photo book is perfect for capturing life’s big moments.</p>
+      <div className="product-info">
+        <div id="book-slider">
+          <div className="container">
+            <div id="slider-image-book" style={{ backgroundPositionY: this.state.bgPosition }}></div>
+          </div>
+          <input id="book-slider_controller" type="range" min="1" max="44" value={this.state.value} onChange={this.handleSlider} />
         </div>
-        <div className="container">
-          <div id="slider-image-book" style={{ backgroundPositionY: this.state.bgPosition }}></div>
+        <div className="product-detail">
+          <h2 className="title">12 x 12 Premium Layflat</h2>
+          <div className="desc">
+            <p>The ultimate coffee-table addition, this 12x12 photo book is perfect for capturing life’s big moments.</p>
+            <ul>
+              <li>Starts at 30 pages</li>
+              <li>Maximum 100 pages</li>
+              <li>Allows your photo book to ‘lay flat’, not interrupting photos that cross the center fold</li>
+              <li>Choose from a variety of themes</li>
+              <li>Add your own captions and photos to a selection of professional layouts</li>
+              <li>Printed on Fujicolor Crystal Archive Album HD Paper</li>
+              <li>Includes a laminated cover for added protection</li>
+            </ul>
+          </div>
+          <div class="product-select">
+            <h3>Select Product</h3>
+            <ul className="product-lists">
+              <a href="#" className="product-list isActive">
+                <li>
+                  <img src="https://www.costcophotocenter.com/assets/en-US/ProductDetails/Photobooks/ProductOptions/12x12PremiumLayflat/thumb" alt="" />
+                  <div className="product-list_title">12 x 12 Premium Layflat</div>
+                </li>
+              </a>
+              <a href="#" className="product-list">
+                <li>
+                  <img src="https://www.costcophotocenter.com/assets/en-US/ProductDetails/Photobooks/ProductOptions/11x8Hardcover2-Pack/thumb" alt="" />
+                  <div className="product-list_title">11¼ x 8¾ Hardcover</div>
+                </li>
+              </a>
+              <a href="#" className="product-list">
+                <li>
+                  <img src="https://www.costcophotocenter.com/assets/en-US/ProductDetails/Photobooks/ProductOptions/8x8Softcover2-Pack/thumb" alt="" />
+                  <div className="product-list_title">8 x 8 Softcover</div>
+                </li>
+              </a>
+            </ul>
+            <div className="product-price">
+              <div>
+                <h1>Starting at $19.99</h1>
+                <p>Delivered in 5-7 business days</p>
+              </div>
+              <button>Continue</button>
+            </div>
+          </div>
         </div>
-        <input id="book-slider_controller" type="range" min="1" max="44" value={this.state.value} onChange={this.handleSlider} />
       </div>
     );
   }

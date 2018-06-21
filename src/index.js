@@ -16,10 +16,10 @@ import LandingPage from './components/Page/LandingPage/LandingPage'
 
 ReactDOM.render(
   <Router>
-      <Switch>
-        <Route exact path="/" render={()=> <App><LandingPage landing="imageScroll" /></App>} />
-        <Route path="/card-slider" render={()=> <App><LandingPage landing="slider" /></App>} />
-        <Route path="/product" render={()=> <App><ProductPage /></App>}  />
-      </Switch>
+    <Switch>
+      <Route exact path="/" render={() => <App><LandingPage landing="imageScroll" /></App>} />
+      <Route path="/card-slider" render={() => <App><LandingPage landing="slider" /></App>} />
+      <Route path="/product" render={() => <App><ProductPage /></App>} />
+    </Switch>
   </Router>,
   document.getElementById('root'));
