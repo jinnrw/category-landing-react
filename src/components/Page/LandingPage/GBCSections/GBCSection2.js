@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import gbcsection3banner from '../../images/babybanner_siteB.png';
+import gbcsection3banner from '../../../../images/babybanner_siteB.png';
 import './GBCSections.scss';
 
 class GBCSection2 extends Component {

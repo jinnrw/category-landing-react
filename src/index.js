@@ -10,22 +10,16 @@ import {
 } from 'react-router-dom'
 
 import './index.scss';
-
 import App from './components/Layout/Layout';
-import ImageScroll from './components/ImageScroll/ImageScroll';
-import Slider from './components/Slider/Slider';
+import ProductPage from './components/Page/ProductPage/ProductPage';
+import LandingPage from './components/Page/LandingPage/LandingPage'
 
 ReactDOM.render(
   <Router>
-    {/* <Route path="/" component={Layout}>
-      <Route path="image-scroll" component={ImageScroll} />
-      <Route path="slider" component={Slider} />
-    </Route> */}
-    <App>
       <Switch>
-        <Route exact path="/" component={ImageScroll} />
-        <Route path="/slider" component={Slider} />
+        <Route exact path="/" render={()=> <App><LandingPage landing="imageScroll" /></App>} />
+        <Route path="/card-slider" render={()=> <App><LandingPage landing="slider" /></App>} />
+        <Route path="/product" render={()=> <App><ProductPage /></App>}  />
       </Switch>
-    </App>
   </Router>,
   document.getElementById('root'));

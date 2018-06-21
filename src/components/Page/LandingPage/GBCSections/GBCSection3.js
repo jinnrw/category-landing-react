@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import section3icon1 from '../../images/icon-tile-1_siteB.png';
-import section3icon2 from '../../images/icon-tile-2_siteB.png';
-import section3icon3 from '../../images/icon-tile-3_siteB.png';
-import section3icon4 from '../../images/icon-tile-4_siteB.png';
+import section3icon1 from '../../../../images/icon-tile-1_siteB.png';
+import section3icon2 from '../../../../images/icon-tile-2_siteB.png';
+import section3icon3 from '../../../../images/icon-tile-3_siteB.png';
+import section3icon4 from '../../../../images/icon-tile-4_siteB.png';
 import './GBCSections.scss';
 
 class GBCSection3 extends Component {
