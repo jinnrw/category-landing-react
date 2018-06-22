@@ -6,6 +6,8 @@ import GBCSection4 from './GBCSections/GBCSection4';
 import ImageScroll from './ImageScroll/ImageScroll';
 import Slider from './Slider/Slider';
 
+import './LandingPage.scss';
+
 
 class LandingPage extends Component {
   render() {
@@ -14,6 +16,9 @@ class LandingPage extends Component {
     return (
       <div className="landing">
         <main>
+          <div className="page-header">
+            <h1>{landingProps ? "ImageScroll Demo":"Slider Demo"}</h1>
+          </div>
           <GBCSection1 />
           {landingProps ? <ImageScroll/>:<Slider/>}
           <GBCSection2 />
