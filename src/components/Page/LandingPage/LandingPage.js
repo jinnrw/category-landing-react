@@ -6,6 +6,7 @@ import GBCSection4 from './GBCSections/GBCSection4';
 import ImageScroll from './ImageScroll/ImageScroll';
 import BannerScroll from './BannerScroll/BannerScroll';
 import Slider from './Slider/Slider';
+import HotSpot from './HotSpot/HotSpot';
 
 import './LandingPage.scss';
 
@@ -15,6 +16,7 @@ class LandingPage extends Component {
     const isImageScroll = this.props.landing === "imageScroll";
     const isSilder = this.props.landing === "slider";
     const isBannerScroll = this.props.landing === "BannerScroll";
+    const isHotSpot = this.props.landing === "HotSpot";
 
     return (
       <div className="landing">
@@ -24,8 +26,10 @@ class LandingPage extends Component {
               {isImageScroll && "Image Scroll Demo"}
               {isSilder && "Slider Demo"}
               {isBannerScroll && "Banner Demo"}
+              {isHotSpot && "Hot Spot Demo"}
             </h1>
           </div>
+          {isHotSpot && <HotSpot />}
           <GBCSection1 />
           {isImageScroll && <ImageScroll />}
           {isSilder && <Slider />}
