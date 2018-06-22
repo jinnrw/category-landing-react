@@ -34,7 +34,7 @@ class BookSlider extends Component {
               <li>Includes a laminated cover for added protection</li>
             </ul>
           </div>
-          <div class="product-select">
+          <div className="product-select">
             <h3>Select Product</h3>
             <ul className="product-lists">
               <a href="#" className="product-list isActive">

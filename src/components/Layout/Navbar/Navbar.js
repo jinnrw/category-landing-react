@@ -15,6 +15,7 @@ class Navbar extends Component {
         <ul className="nav-list">
           <li className="nav-link"><Link to="/">Shop All</Link></li>
           <li className="nav-link"><Link to="card-slider">Slider Demo</Link></li>
+          <li className="nav-link"><Link to="banner">Banner Demo</Link></li>
           <li className="nav-link"><Link to="product">Product Demo</Link></li>
         </ul>
       </nav>

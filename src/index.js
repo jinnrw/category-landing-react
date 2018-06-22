@@ -19,6 +19,7 @@ ReactDOM.render(
     <Switch>
       <Route exact path="/" render={() => <App><LandingPage landing="imageScroll" /></App>} />
       <Route path="/card-slider" render={() => <App><LandingPage landing="slider" /></App>} />
+      <Route path="/banner" render={() => <App><LandingPage landing="BannerScroll" /></App>} />
       <Route path="/product" render={() => <App><ProductPage /></App>} />
     </Switch>
   </Router>,
