@@ -21,7 +21,7 @@ class BookSlider extends Component {
           <input id="book-slider_controller" type="range" min="1" max="44" value={this.state.value} onChange={this.handleSlider} />
         </div>
         <div className="product-detail">
-          <h2 className="title">12 x 12 Premium Layflat</h2>
+          <h1 className="title">12 x 12 Premium Layflat</h1>
           <div className="desc">
             <p>The ultimate coffee-table addition, this 12x12 photo book is perfect for capturing life’s big moments.</p>
             <ul>
@@ -58,7 +58,7 @@ class BookSlider extends Component {
             </ul>
             <div className="product-price">
               <div>
-                <h1>Starting at $19.99</h1>
+                <strong className="price">Starting at $19.99</strong>
                 <p>Delivered in 5-7 business days</p>
               </div>
               <button>Continue</button>

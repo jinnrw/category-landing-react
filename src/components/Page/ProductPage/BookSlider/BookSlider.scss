@@ -16,8 +16,8 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: stretch;
+  align-items: start;
   padding: 0 20px;
   .container {
     width: 100%;
@@ -70,19 +70,25 @@
   display: flex;
   flex-direction: column;
   .desc {
+    padding: 20px 0 40px;
     ul,
     li {
       list-style-type: disc;
-      line-height: 20px;
+      line-height: 24px;
     }
   }
 }
 
 .product-select {
+  h3 {
+    font-size: 20px;
+    font-weight: normal;
+  }
   .product-lists {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
+    padding: 0;
   }
   .product-list {
     display: block;
@@ -96,12 +102,19 @@
     &.isActive {
       outline: 3px solid #0060a8;
     }
+    &:hover {
+      outline: 3px solid #64c8ff;
+    }
 
     img {
       width: 100%;
     }
 
     .product-list_title {
+      color: #0060a8;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 19px;
       padding-top: 10px;
     }
   }
@@ -111,6 +124,12 @@
   display: flex;
   justify-content: flex-end;
   text-align: right;
+  line-height: 24px;
+
+  .price {
+    font-size: 24px;
+    font-weight: normal;
+  }
 
   button {
     width: 200px;

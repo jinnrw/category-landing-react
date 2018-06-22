@@ -20,6 +20,10 @@
 	box-sizing: border-box;
 }
 
+img {
+	max-width: 100%;
+}
+
 .visuallyhidden {
 	border: 0;
 	clip: rect(0 0 0 0);
@@ -69,15 +73,15 @@ main {
 			-ms-flex-pack: justify;
 					justify-content: space-between;
 	@include variable(max-width, --SITE-WIDTH, $ie-site-width);
-  margin: 0 auto;
+	margin: 0 auto;
 
-  .logo {
-  	display: inline-block;
+	.logo {
+		display: inline-block;
 
-  	img {
-			padding: 10px;
-			max-width: 275px;
-    }
+		img {
+				padding: 10px;
+				max-width: 275px;
+		}
 	}
 }
 
