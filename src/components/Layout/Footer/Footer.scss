@@ -10,6 +10,7 @@
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   @include variable(max-width, --SITE-WIDTH, 1440px);
+  line-height: 24px;
   margin: 0 auto;
 }
 
@@ -19,6 +20,7 @@
   .footer-subtitle {
     @include variable(color, --FOOTER-SUBTITLE, $ie-footer-subtitle);
     font-size: 1.25rem;
+    min-height: 34px;
     padding-bottom: 10px;
   }
   
