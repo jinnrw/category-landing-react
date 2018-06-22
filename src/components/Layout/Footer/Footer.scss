@@ -15,6 +15,14 @@
   padding: 35px 0 20px;
 }
 
+.copyright {
+  @include variable(color, --FOOTER-LINK, $ie-footer-link);
+  @include variable(max-width, --SITE-WIDTH, 1440px);
+  margin: 0 auto;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
 .footer-links {
   padding: 0 10px;
 

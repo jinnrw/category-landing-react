@@ -50,6 +50,10 @@ class Footer extends Component {
             <li className="footer-link"><a href="#">Sports Gallery</a></li>
           </ol>
         </div>
+
+        <div class="copyright">
+          <p>&copy; 1998 — 2018 Costco Wholesale Corporation. All rights reserved.</p>
+        </div>
       </footer>
     );
   }
