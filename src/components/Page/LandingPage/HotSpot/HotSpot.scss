@@ -1,8 +1,28 @@
 @import "../../../../global";
 
 .banner-hotspots {
-    overflow: hidden;
+    background-image: url('hotspot-bkg.png');
+    background-repeat: no-repeat;
+    background-size: 2000px 454px;
+    background-position: center top;
     position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 47px;
+        background-color: #fff;
+        z-index: 0;
+    }
+
+    .container {
+        margin: 0 auto;
+        max-width: 1440px;
+        overflow: hidden;
+        position: relative;
+    }
+
     .background {
         display: block;
         text-align: center;
@@ -20,8 +40,8 @@
         -webkit-animation-duration: 0.3s;
         -moz-animation-duration: 0.3s;
         animation-duration: 0.3s;
+        z-index: 1;
     }
-
 
     &:hover .hotspot {
         animation-name: bounceIn;
@@ -153,9 +173,6 @@
                 a {
                     color: #0060a8;
                 }
-                .details {
-
-                }
             }
         }
         &:hover .hotspot-modal {
@@ -185,7 +202,7 @@
     }
     50%{
       opacity: 0.9;
-      transform: scale(2);
+      transform: scale(3);
     }
     80%{
       opacity: 1;
