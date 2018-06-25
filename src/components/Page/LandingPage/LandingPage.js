@@ -7,6 +7,7 @@ import ImageScroll from './ImageScroll/ImageScroll';
 import BannerScroll from './BannerScroll/BannerScroll';
 import Slider from './Slider/Slider';
 import HotSpot from './HotSpot/HotSpot';
+import HeroBanner from './HeroBanner/HeroBanner';
 
 import './LandingPage.scss';
 
@@ -30,6 +31,7 @@ class LandingPage extends Component {
             </h1>
           </div>
           {isHotSpot && <HotSpot />}
+          {isSilder && <HeroBanner />}
           <GBCSection1 />
           {isImageScroll && <ImageScroll />}
           {isSilder && <Slider />}

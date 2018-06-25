@@ -13,12 +13,12 @@ class ImageScroll extends Component {
       },
     });
     var tweenSceneEnter = new window.TimelineMax({});
-    tweenSceneEnter.fromTo("#mask", 1, { scale: 1 },
-      { scale: 2 });
-    tweenSceneEnter.to("#background", 1, { scale: 2 }, 0);
+    tweenSceneEnter.fromTo("#scene", 1, { "-webkit-mask-size": "180px" },
+      { "-webkit-mask-size": "450px" });
+    tweenSceneEnter.to("#background", 1, { scale: 1.6 }, 0);
 
     var tweenSceneLeave = new window.TimelineMax({});
-    tweenSceneLeave.to("#mask", 1, { scale: 3.5 });
+    tweenSceneLeave.to("#scene", 1, { "-webkit-mask-size": "1000px" });
     tweenSceneLeave.to("#background", 2, { scale: 1 }, 0.1);
 
     // Scene On Enter
@@ -42,7 +42,7 @@ class ImageScroll extends Component {
   render() {
     return (
       <div className="image-scroll">
-        <div id="scene">
+        <div id="scene" className="mask">
           <div className="image-scroll_title">
             <h2 className="title">Business Cards</h2>
             <p className="desc">Full color, double-sided printing on premium 16 pt card stock</p>
@@ -52,22 +52,6 @@ class ImageScroll extends Component {
               src="https://cosus-greetings-render.pnimedia.com/api/v3/thumb/DM/HY101118COSUS/3/BIZCRD3X2V/600/Back.png?designVariation=Layout1&options=Stock|16ptMatte|0|101|2;"
               alt="" />
           </div>
-          <svg id="mask"
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 160 90">
-            <defs>
-              <style
-                dangerouslySetInnerHTML={{
-                  __html: ".cls-1{fill:none;}.cls-2{fill:#fff;}"
-                }}
-              />
-            </defs>
-            <title>Untitled-1</title>
-            <polygon
-              className="cls-1" points="69.03 26.01 58.07 45 69.03 63.99 90.97 63.99 101.93 45 90.97 26.01 69.03 26.01" />
-            <path className="cls-2" d="M0,0V90H160V0ZM91,64H69l-11-19L69,26H91l11,19Z" />
-          </svg>
         </div>
       </div>
     );
