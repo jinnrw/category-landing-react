@@ -148,6 +148,7 @@
 
         .hotspot-modal {
             background-color: #fff;
+            box-shadow: 0 0 1px 0 rgba(0,0,0,0.1);
             opacity: 0;
             position: absolute;
             text-align: left;
@@ -170,6 +171,9 @@
                 display: grid;
                 grid-gap: 10px;
                 grid-template-columns: 1fr 1fr;
+                img {
+                    opacity: 0;
+                }
                 a {
                     color: #0060a8;
                 }
@@ -182,6 +186,15 @@
             animation-fill-mode: forwards;
             opacity: 1;
             pointer-events: initial;
+            figure {
+                img {
+                    animation-name: bounceInModalImage;
+                    animation-duration: 450ms;
+                    animation-timing-function: linear;
+                    animation-fill-mode: forwards;
+                    animation-delay: 0.05s;
+                }
+            }
         }
     }
 }
@@ -230,5 +243,24 @@
     100%{
       opacity: 1;
       transform: scale(1) translate3d(0,0,0);
+    }
+  }
+
+  @keyframes bounceInModalImage{
+    0%{
+      opacity: 0;
+      transform: scale(0.3) translateY(160px);
+    }
+    50%{
+      opacity: 0.9;
+      transform: scale(1.1);
+    }
+    80%{
+      opacity: 1;
+      transform: scale(0.95);
+    }
+    100%{
+      opacity: 1;
+      transform: scale(1) translateY(0);
     }
   }
