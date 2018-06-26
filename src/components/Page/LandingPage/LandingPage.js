@@ -8,6 +8,7 @@ import BannerScroll from './BannerScroll/BannerScroll';
 import Slider from './Slider/Slider';
 import HotSpot from './HotSpot/HotSpot';
 import HeroBanner from './HeroBanner/HeroBanner';
+import ImageAutoplay from './ImageAutoplay/ImageAutoplay';
 
 import './LandingPage.scss';
 
@@ -37,6 +38,7 @@ class LandingPage extends Component {
           {isSilder && <Slider />}
           {isBannerScroll && <BannerScroll />}
           <GBCSection2 />
+          {isHotSpot && <ImageAutoplay />}
           <GBCSection3 />
           <GBCSection4 />
         </main>
