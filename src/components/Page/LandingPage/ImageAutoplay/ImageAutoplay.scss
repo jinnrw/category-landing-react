@@ -3,6 +3,8 @@
   margin: 0 auto;
   max-width: 1440px;
   margin-bottom: 30px;
+  padding: 40px 0 ;
+
   .container {
     position: relative;
     width: 50%;
@@ -18,7 +20,7 @@
   }
   .desc {
     width: 50%;
-    padding-left: 20px;
+    padding-left: 40px;
     .title {
       font-size: 30px;
       font-weight: normal;
@@ -40,7 +42,6 @@
     // transition: opacity .5s ease;
     width: 75px;
     z-index: 1;
-    
     &.hs1 {
       left: 15%;
       top: 55%;
@@ -53,22 +54,18 @@
         }
       }
     }
-
     &.hs2 {
       right: 26%;
       top: 45%;
-
       .hotspot-modal {
         left: -30px;
         top: -110px;
-        
         &:after {
           left: 55px;
           bottom: -12px;
         }
       }
     }
-
     .dot-ref {
       height: 100%;
       width: 100%;
@@ -89,14 +86,13 @@
         width: 25px;
       }
     }
-
     .hotspot-modal {
       background-color: #fff;
       box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.1);
       opacity: 0;
       position: absolute;
       text-align: left;
-      min-width: 250px;
+      min-width: 280px;
       z-index: 2;
       -webkit-transition: opacity .5s ease;
       transition: opacity .5s ease;
@@ -123,7 +119,6 @@
         }
       }
     }
-
     &:hover .hotspot-modal {
       animation-name: bounceInModal;
       animation-duration: 450ms;
@@ -132,14 +127,14 @@
       opacity: 1;
       pointer-events: initial;
       figure {
-          img {
-              animation-name: bounceInModalImage;
-              animation-duration: 450ms;
-              animation-timing-function: linear;
-              animation-fill-mode: forwards;
-              animation-delay: 0.05s;
-          }
+        img {
+          animation-name: bounceInModalImage;
+          animation-duration: 450ms;
+          animation-timing-function: linear;
+          animation-fill-mode: forwards;
+          animation-delay: 0.05s;
+        }
       }
-  }
+    }
   }
 }

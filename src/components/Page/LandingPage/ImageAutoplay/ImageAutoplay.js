@@ -2,14 +2,31 @@ import React, { Component } from 'react';
 import './ImageAutoplay.scss';
 
 class ImageAutoplay extends Component {
-  state = { bgPosition: 0 };
+  state = { bgPosition: 0, intervalID: '' };
 
   componentDidMount() {
     var imageAutoplay = this.imageAutoplay;
     imageAutoplay(); // Init on page load
-    setInterval(function () {
+    this.state.intervalID = setInterval(function () {
       imageAutoplay();
     }, 10000)
+    // console.log(this.state.intervalID)
+    // ClearInterval when onblur
+    window.onblur = () => {
+      clearInterval(this.state.intervalID);
+      console.log("Clear " + this.state.intervalID)
+    }
+    window.onfocus = () => {
+      this.state.intervalID = setInterval(function () {
+        imageAutoplay();
+      }, 10000)
+      console.log("Start " + this.state.intervalID)
+    }
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.state.intervalID);
+    // console.log(this.state.intervalID)
   }
 
   imageAutoplay() {
@@ -42,8 +59,8 @@ class ImageAutoplay extends Component {
               <figure>
                 <img src="http://placehold.it/75x75" alt="" />
                 <div className="details">
-                  <figcaption>Tri-fold Brochures</figcaption>
-                  <a href="#">Shop Brochures</a>
+                  <figcaption>Photo Books</figcaption>
+                  <a href="#">Shop</a>
                 </div>
               </figure>
             </div>
@@ -57,8 +74,8 @@ class ImageAutoplay extends Component {
               <figure>
                 <img src="http://placehold.it/75x75" alt="" />
                 <div className="details">
-                  <figcaption>Tri-fold Brochures</figcaption>
-                  <a href="#">Shop Brochures</a>
+                  <figcaption>Photo Mugs</figcaption>
+                  <a href="#">Shop</a>
                 </div>
               </figure>
             </div>
