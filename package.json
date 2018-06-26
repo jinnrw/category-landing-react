@@ -96,6 +96,21 @@
     "extends": "react-app"
   },
   "devDependencies": {
-    "extract-text-webpack-plugin": "^3.0.2"
-  }
+    "extract-text-webpack-plugin": "^3.0.2",
+    "grunt": "^1.0.3",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "main": "postcss.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinnrw/category-landing-react.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jinnrw/category-landing-react/issues"
+  },
+  "homepage": "https://github.com/jinnrw/category-landing-react#readme"
 }

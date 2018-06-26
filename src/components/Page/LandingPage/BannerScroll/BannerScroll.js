@@ -9,24 +9,25 @@ class BannerScroll extends Component {
   scrollEvent() {
     var controller = new window.ScrollMagic.Controller({
       globalSceneOptions: { // options for every scene
-        triggerHook: 0.4,
+        triggerHook: 0.21,
       },
     });
     var scene = new window.ScrollMagic.Scene({
       triggerElement: "#scene",
-      duration: 200,
+      duration: 300,
     })
+      .setPin('#scene')
       .setTween("#st1", 0.5, { scale: 5.7, transformOrigin: "50% 54%" })
-      // .addIndicators({ name: "1" })
+      //.addIndicators({ name: "1" })
       .addTo(controller); // assign the scene to the controller
 
     var scene2 = new window.ScrollMagic.Scene({
       triggerElement: "#scene",
       duration: 0,
-      offset: 200,
+      offset: 300,
     })
       .setClassToggle("#scene", "active")
-      // .addIndicators({ name: "2" })
+      //.addIndicators({ name: "2" })
       .addTo(controller); // assign the scene to the controller
 
 
