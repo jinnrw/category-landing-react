@@ -35,7 +35,7 @@ class CardSlider extends Component {
     var controller = new $.ScrollMagic.Controller();
 
     // build scene
-    var scene = new $.ScrollMagic.Scene({ triggerElement: "#card-slider_container", duration: 500 })
+    new $.ScrollMagic.Scene({ triggerElement: "#card-slider_container", duration: 500 })
       // Set fixed pin
       .setPin('#card-slider_container')
       .offset(300)
@@ -46,8 +46,6 @@ class CardSlider extends Component {
   }
 
   render() {
-    const isActive = this.props.isActive;
-
     return (
         <div id="card-slider_container" >
           <div>

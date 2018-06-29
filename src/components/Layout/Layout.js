@@ -9,7 +9,6 @@ import Footer from './Footer/Footer';
 
 class App extends Component {
   render() {
-    const landingProps = this.props.children;
     return (
       <div className="App">
         <header>

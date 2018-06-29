@@ -6,7 +6,7 @@ class Navbar extends Component {
   render() {
     return (
       <nav className="nav">
-        <label className="mobile-menu-btn" for="mobile-menu-toggle">
+        <label className="mobile-menu-btn" htmlFor="mobile-menu-toggle">
           <span className="visuallyhidden">Mobile menu button</span>
           <span className="lines"></span>
         </label>

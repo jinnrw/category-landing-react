@@ -30,9 +30,9 @@ class HeroBanner extends Component {
   render() {
     return (
       <div className="hero-banner">
-        <div class="slides">
-          <img class="slide" src="https://www.costcobusinessprinting.com/dynamic/Content/images/RetailerSpecific/COSUS/carousel/BANNER2.jpg" alt="" />
-          <img class="slide" src="https://www.costcobusinessprinting.com/dynamic/Content/images/RetailerSpecific/COSUS/carousel/BANNER1.jpg" alt="" />
+        <div className="slides">
+          <img className="slide" src="https://www.costcobusinessprinting.com/dynamic/Content/images/RetailerSpecific/COSUS/carousel/BANNER2.jpg" alt="" />
+          <img className="slide" src="https://www.costcobusinessprinting.com/dynamic/Content/images/RetailerSpecific/COSUS/carousel/BANNER1.jpg" alt="" />
         </div>
       </div>
     );

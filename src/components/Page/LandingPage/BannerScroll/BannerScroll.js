@@ -12,7 +12,7 @@ class BannerScroll extends Component {
         triggerHook: 0.21,
       },
     });
-    var scene = new window.ScrollMagic.Scene({
+    new window.ScrollMagic.Scene({
       triggerElement: "#scene",
       duration: 300,
     })
@@ -21,7 +21,7 @@ class BannerScroll extends Component {
       //.addIndicators({ name: "1" })
       .addTo(controller); // assign the scene to the controller
 
-    var scene2 = new window.ScrollMagic.Scene({
+    new window.ScrollMagic.Scene({
       triggerElement: "#scene",
       duration: 0,
       offset: 300,
@@ -47,7 +47,7 @@ class BannerScroll extends Component {
                 <polygon id="st1" points="742,224 588,288 753.8,410 866.7,410 951,367" />
               </clipPath>
             </defs>
-            <g clip-path="url(#mask)" id="source">
+            <g clipPath="url(#mask)" id="source">
               <rect width="100%" height="100%" fill="white" />
               <image href="http://creative-html.pnistaging.com/demos/img/BPbanner1.jpg" width="100%" height="100%" />
             </g>

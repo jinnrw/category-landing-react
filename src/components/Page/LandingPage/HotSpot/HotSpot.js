@@ -17,7 +17,7 @@ class HotSpot extends Component {
                                 <img src="http://placehold.it/75x75" alt="" />
                                 <div className="details">
                                     <figcaption>Tri-fold Brochures</figcaption>
-                                    <a href="#">Shop Brochures</a>
+                                    <a href="">Shop Brochures</a>
                                 </div>
                             </figure>
                         </div>
@@ -31,7 +31,7 @@ class HotSpot extends Component {
                                 <img src="http://placehold.it/75x75" alt="" />
                                 <div className="details">
                                     <figcaption>Brochures</figcaption>
-                                    <a href="#">Shop Brochures</a>
+                                    <a href="">Shop Brochures</a>
                                 </div>
                             </figure>
                         </div>
@@ -45,7 +45,7 @@ class HotSpot extends Component {
                                 <img src="http://placehold.it/75x75" alt="" />
                                 <div className="details">
                                     <figcaption>Banners</figcaption>
-                                    <a href="#">Shop Banners</a>
+                                    <a href="">Shop Banners</a>
                                 </div>
                             </figure>
                         </div>
@@ -59,7 +59,7 @@ class HotSpot extends Component {
                                 <img src="http://placehold.it/75x75" alt="" />
                                 <div className="details">
                                     <figcaption>Business Cards</figcaption>
-                                    <a href="#">Shop Cards</a>
+                                    <a href="">Shop Cards</a>
                                 </div>
                             </figure>
                         </div>
@@ -73,7 +73,7 @@ class HotSpot extends Component {
                                 <img src="http://placehold.it/75x75" alt="" />
                                 <div className="details">
                                     <figcaption>Greeting Cards</figcaption>
-                                    <a href="#">Shop Greeting Cards</a>
+                                    <a href="">Shop Greeting Cards</a>
                                 </div>
                             </figure>
                         </div>

@@ -20,6 +20,9 @@ class LandingPage extends Component {
     const isBannerScroll = this.props.landing === "BannerScroll";
     const isHotSpot = this.props.landing === "HotSpot";
 
+    // console.log(isImageScroll)
+    // console.log(isSilder)
+
     return (
       <div className="landing">
         <main>

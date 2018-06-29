@@ -10,8 +10,6 @@ class BookSlider extends Component {
   }
 
   render() {
-    const isActive = this.props.isActive;
-
     return (
       <div className="product-info">
         <div id="book-slider">
@@ -37,19 +35,19 @@ class BookSlider extends Component {
           <div className="product-select">
             <h3>Select Product</h3>
             <ul className="product-lists">
-              <a href="#" className="product-list isActive">
+              <a href="" className="product-list isActive">
                 <li>
                   <img src="https://www.costcophotocenter.com/assets/en-US/ProductDetails/Photobooks/ProductOptions/12x12PremiumLayflat/thumb" alt="" />
                   <div className="product-list_title">12 x 12 Premium Layflat</div>
                 </li>
               </a>
-              <a href="#" className="product-list">
+              <a href="" className="product-list">
                 <li>
                   <img src="https://www.costcophotocenter.com/assets/en-US/ProductDetails/Photobooks/ProductOptions/11x8Hardcover2-Pack/thumb" alt="" />
                   <div className="product-list_title">11¼ x 8¾ Hardcover</div>
                 </li>
               </a>
-              <a href="#" className="product-list">
+              <a href="" className="product-list">
                 <li>
                   <img src="https://www.costcophotocenter.com/assets/en-US/ProductDetails/Photobooks/ProductOptions/8x8Softcover2-Pack/thumb" alt="" />
                   <div className="product-list_title">8 x 8 Softcover</div>

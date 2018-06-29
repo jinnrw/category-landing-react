@@ -7,9 +7,14 @@ class ImageAutoplay extends Component {
   componentDidMount() {
     var imageAutoplay = this.imageAutoplay;
     imageAutoplay(); // Init on page load
-    this.state.intervalID = setInterval(function () {
-      imageAutoplay();
-    }, 10000)
+
+    this.setState({
+      intervalID: setInterval(function () {
+        imageAutoplay();
+      }, 10000)
+    })
+
+
     // console.log(this.state.intervalID)
     // ClearInterval when onblur
     window.onblur = () => {
@@ -17,16 +22,18 @@ class ImageAutoplay extends Component {
       console.log("Clear " + this.state.intervalID)
     }
     window.onfocus = () => {
-      this.state.intervalID = setInterval(function () {
-        imageAutoplay();
-      }, 10000)
+      this.setState({
+        intervalID: setInterval(function () {
+          imageAutoplay();
+        }, 10000)
+      })
       console.log("Start " + this.state.intervalID)
     }
   }
 
   componentWillUnmount() {
     clearInterval(this.state.intervalID);
-    // console.log(this.state.intervalID)
+    console.log("Clear " + this.state.intervalID)
   }
 
   imageAutoplay() {
@@ -60,7 +67,7 @@ class ImageAutoplay extends Component {
                 <img src="http://placehold.it/75x75" alt="" />
                 <div className="details">
                   <figcaption>Photo Books</figcaption>
-                  <a href="#">Shop</a>
+                  <a href="">Shop</a>
                 </div>
               </figure>
             </div>
@@ -75,7 +82,7 @@ class ImageAutoplay extends Component {
                 <img src="http://placehold.it/75x75" alt="" />
                 <div className="details">
                   <figcaption>Photo Mugs</figcaption>
-                  <a href="#">Shop</a>
+                  <a href="">Shop</a>
                 </div>
               </figure>
             </div>
