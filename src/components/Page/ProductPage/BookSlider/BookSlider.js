@@ -3,21 +3,80 @@ import './BookSlider.scss';
 
 class BookSlider extends Component {
   handleSlider = this.handleSlider.bind(this);
-  state = { bgPosition: 0, value: 1 };
+  state = { bgPosition: 0, value: 1, isVideoPlaying: false, isCurrentImage: true };
 
   handleSlider(e) {
     this.setState({ bgPosition: e.target.value * (-20250 / 45), value: e.target.value });
+  }
+
+  componentDidMount() {
+    const $ = window;
+    // $.$('#book-slider').slick();
+
+    $.$('.slider-for').slick({
+      slidesToShow: 1,
+      // slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '.slider-nav',
+      draggable: false
+    });
+    $.$('.slider-nav').slick({
+      slidesToShow: 4,
+      // slidesToScroll: 1,
+      asNavFor: '.slider-for',
+      dots: false,
+      centerMode: false,
+      focusOnSelect: true,
+      draggable: false
+    });
+  }
+
+  currentIamge() {
+    const currentState = this.state.isCurrentImage;
+    this.setState({ isCurrentImage: !currentState });
+  };
+
+  playVideo() {
+    this.refs.vidRef.play();
+    this.setState({ isVideoPlaying: true });
+    console.log('its playing!')
+  }
+
+  stopVideo() {
+    if (this.state.isVideoPlaying) {
+      this.refs.vidRef.pause();
+      console.log('it paused!')
+      this.setState({ isVideoPlaying: false });
+    }
   }
 
   render() {
     return (
       <div className="product-info">
         <div id="book-slider">
-          <div className="container">
-            <div id="slider-image-book" style={{ backgroundPositionY: this.state.bgPosition }}></div>
+          <div className="slider-for">
+            <img className="slider-image" src="https://www.costcophotocentre.ca/dynamic/en-CA/ProductDetails/Photobooks/ImageSlider/11x8PhotoBook/sliderthumb1" />
+            <video id="video" className="slider-image" ref="vidRef" controls controlsList="nodownload noremote foobar">
+              <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
+            </video>
+            <div className="container">
+              <div id="slider-image-book" className="slider-image" style={{ backgroundPositionY: this.state.bgPosition }}></div>
+              <input id="book-slider_controller" type="range" min="1" max="44" value={this.state.value} onChange={this.handleSlider} />
+            </div>
+
+            <img className="slider-image" src="https://www.costcophotocentre.ca/dynamic/en-CA/ProductDetails/Photobooks/ImageSlider/11x8PhotoBook/sliderthumb4" />
           </div>
-          <input id="book-slider_controller" type="range" min="1" max="44" value={this.state.value} onChange={this.handleSlider} />
+
+          <div className="slider-nav">
+            <img className="slider-image" src="https://www.costcophotocentre.ca/dynamic/en-CA/ProductDetails/Photobooks/ImageSlider/11x8PhotoBook/sliderthumb1" 
+            onClick={this.stopVideo.bind(this)} />
+            <img id="video-play" className="slider-image" onClick={this.playVideo.bind(this)} src="https://www.costcophotocentre.ca/dynamic/en-CA/ProductDetails/Photobooks/ImageSlider/11x8PhotoBook/sliderthumb2" />
+            <img className="slider-image" src="https://www.costcophotocentre.ca/dynamic/en-CA/ProductDetails/Photobooks/ImageSlider/11x8PhotoBook/sliderthumb3" onClick={this.stopVideo.bind(this)} />
+            <img className="slider-image" src="https://www.costcophotocentre.ca/dynamic/en-CA/ProductDetails/Photobooks/ImageSlider/11x8PhotoBook/sliderthumb4" onClick={this.stopVideo.bind(this)} />
+          </div>
         </div>
+
         <div className="product-detail">
           <h1 className="title">12 x 12 Premium Layflat</h1>
           <div className="desc">
