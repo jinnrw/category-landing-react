@@ -34,7 +34,9 @@ ReactDOM.render(
       <Route exact path="/hotspot" render={() =>
         <App><LandingPage landing="HotSpot" /></App>} />
       <Route exact path="/product" render={() =>
-        <App><ProductPage /></App>} />
+        <App><ProductPage productPage="BookSlider"/></App>} />
+      < Route exact path="/adlayout" render={() =>
+        <App><ProductPage productPage="AdLayout"/></App>} />
     </Switch>
   </Router>,
   document.getElementById('root'));

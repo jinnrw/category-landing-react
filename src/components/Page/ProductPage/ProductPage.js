@@ -4,14 +4,19 @@ import footerbanner1 from '../../../images/footerbanner1.png';
 import footerbanner2 from '../../../images/footerbanner2.png';
 import './ProductPage.scss';
 import BookSlider from './BookSlider/BookSlider';
+import AdLayout from './AdLayout/AdLayout';
 
 class ProductPage extends Component {
 
   render() {
+    const isAdlayout = this.props.productPage === "AdLayout";
+
 
     return (
       <div id="product" >
-        <BookSlider />
+      <BookSlider isAdlayout={isAdlayout}/>
+        {/* {!isAdlayout && <BookSlider />} */}
+        {/* {isAdlayout && <AdLayout BookSlider />} */}
 
         <ul className="product-additional-details">
           <li>

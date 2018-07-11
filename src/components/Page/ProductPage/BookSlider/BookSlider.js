@@ -53,7 +53,7 @@ class BookSlider extends Component {
 
   render() {
     return (
-      <div className="product-info">
+      <div className={`product-info ${this.props.isAdlayout?"isAdLayout" : ''} `}>
         <div id="book-slider">
           <div className="slider-for">
             <img className="slider-image" src="https://www.costcophotocentre.ca/dynamic/en-CA/ProductDetails/Photobooks/ImageSlider/11x8PhotoBook/sliderthumb1" />
