@@ -5,6 +5,8 @@ import logo from '../../images/PhotoCenter_SB.png';
 import './Layout.scss';
 import Navbar from './Navbar/Navbar';
 import Footer from './Footer/Footer';
+import ProductPage from '../Page/ProductPage/ProductPage';
+import LandingPage from '../Page/LandingPage/LandingPage'
 // import ThemeSelector from '../Themes/ThemeSelector';
 
 class App extends Component {

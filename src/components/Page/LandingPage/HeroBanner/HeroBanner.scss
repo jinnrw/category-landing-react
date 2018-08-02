@@ -46,8 +46,8 @@
   } */
   /* ===== CIRCLE SHAPE MASK ===== */
   .mask {
-    mask: url("http://creative-html.pnistaging.com/demos/img/circle.svg");
-    -webkit-mask: url("http://creative-html.pnistaging.com/demos/img/circle.svg");
+    mask: url(../../../../images/circle.svg);
+    -webkit-mask: url(../../../../images/circle.svg);
     -webkit-mask-size: 20px;
     mask-size: 20px;
     -webkit-mask-position: -10%;

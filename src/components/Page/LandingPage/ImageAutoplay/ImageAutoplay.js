@@ -43,7 +43,7 @@ class ImageAutoplay extends Component {
       value++;
       // this.setState({ bgPosition: value * (-74250 / 165) });
 
-      window.$('.slider-image').css('background-position-y', value * (-74250 / 165))
+      window.$('#autoplay_slider-image').css('background-position-y', value * (-74250 / 165))
       if (value >= 164) {
         clearInterval(imageCountdown);
       }
@@ -56,7 +56,7 @@ class ImageAutoplay extends Component {
     return (
       <div className="image-autoplay">
         <div className="container">
-          <div className="slider-image"></div>
+          <div id="autoplay_slider-image"></div>
 
           <div className="hotspot hs1">
             <div className="dot-ref">

@@ -39,7 +39,7 @@ class BannerScroll extends Component {
         <div id="scene">
           <svg xmlns="http://www.w3.org/2000/svg" xlinkHref="http://www.w3.org/1999/xlink">
             <rect width="100%" height="100%" fill="white" />
-            <image href="http://creative-html.pnistaging.com/demos/img/BPbanner2.jpg" width="100%" height="100%" />
+            <image href="./BPbanner2.jpg" width="100%" height="100%" />
           </svg>
           <svg xmlns="http://www.w3.org/2000/svg" xlinkHref="http://www.w3.org/1999/xlink">
             <defs>
@@ -49,7 +49,7 @@ class BannerScroll extends Component {
             </defs>
             <g clipPath="url(#mask)" id="source">
               <rect width="100%" height="100%" fill="white" />
-              <image href="http://creative-html.pnistaging.com/demos/img/BPbanner1.jpg" width="100%" height="100%" />
+              <image href="./BPbanner1.jpg" width="100%" height="100%" />
             </g>
           </svg>
         </div >

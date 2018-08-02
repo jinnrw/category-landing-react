@@ -1,5 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+// import { hydrate, render } from "react-dom";
+
+// import { render } from 'react-snapshot'
+
 // import route Components here
 import {
   BrowserRouter as Router,
@@ -18,7 +22,6 @@ import HomeDecor from './components/Page/HomeDecor/HomeDecor';
 const home = () => (
   <App><LandingPage landing="imageScroll" /></App>
 )
-
 const slider = () => (
   <App><LandingPage landing="slider" /></App>
 )
@@ -46,3 +49,25 @@ ReactDOM.render(
     </Switch>
   </Router>,
   document.getElementById('root'));
+
+// <Router history={browserHistory}>
+//   <Route path="/" component={App}>
+//     <IndexRoute component={Index} />
+//     <Route path="/login" component={Login} />
+//     <Route path="/about" component={About} />
+//     <Route path="/admin" component={Admin} />
+//     <Route path="*" component={FourOhFour} />
+//   </Route>
+// </Router>
+
+
+
+// const rootElement = document.getElementById("root");
+// if (rootElement.hasChildNodes()) {
+//   // hydrate(<App />, rootElement);
+//   hydrate(
+//     <App />, rootElement)
+// } else {
+//   render(
+//     <App />, rootElement);
+// }
