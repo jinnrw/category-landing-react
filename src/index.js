@@ -12,7 +12,8 @@ import {
 import './index.scss';
 import App from './components/Layout/Layout';
 import ProductPage from './components/Page/ProductPage/ProductPage';
-import LandingPage from './components/Page/LandingPage/LandingPage'
+import LandingPage from './components/Page/LandingPage/LandingPage';
+import HomeDecor from './components/Page/HomeDecor/HomeDecor';
 
 const home = () => (
   <App><LandingPage landing="imageScroll" /></App>
@@ -20,6 +21,10 @@ const home = () => (
 
 const slider = () => (
   <App><LandingPage landing="slider" /></App>
+)
+
+const homedecor = () => (
+  <App><HomeDecor landing="homedecor" /></App>
 )
 
 // const reload = () => window.location.reload();
@@ -35,8 +40,9 @@ ReactDOM.render(
         <App><LandingPage landing="HotSpot" /></App>} />
       <Route exact path="/product" render={() =>
         <App><ProductPage productPage="BookSlider"/></App>} />
-      < Route exact path="/adlayout" render={() =>
+      <Route exact path="/adlayout" render={() =>
         <App><ProductPage productPage="AdLayout"/></App>} />
+      <Route exact path="/homedecor" component={homedecor} />
     </Switch>
   </Router>,
   document.getElementById('root'));

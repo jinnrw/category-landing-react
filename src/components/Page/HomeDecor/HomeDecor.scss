@@ -1,0 +1,10 @@
+@import "../../../global";
+
+.page-header {
+    @include variable(max-width, --SITE-WIDTH, $ie-site-width);
+    margin: 0 auto;
+    
+    h1 {
+        padding: 0 10px 20px;
+    }
+}

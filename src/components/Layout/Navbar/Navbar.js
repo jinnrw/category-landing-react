@@ -19,6 +19,7 @@ class Navbar extends Component {
           <li className="nav-link"><Link to="hotspot">Hot Spot Demo</Link></li>
           <li className="nav-link"><Link to="product">Product Demo</Link></li>
           <li className="nav-link"><Link to="adlayout">New layout</Link></li>
+          <li className="nav-link"><Link to="homedecor">Home D&eacute;cor</Link></li>
         </ul>
       </nav>
     );
