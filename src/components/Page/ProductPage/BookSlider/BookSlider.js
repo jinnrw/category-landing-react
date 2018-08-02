@@ -58,7 +58,7 @@ class BookSlider extends Component {
           <div className="slider-for">
             <img className="slider-image" src="https://www.costcophotocentre.ca/dynamic/en-CA/ProductDetails/Photobooks/ImageSlider/11x8PhotoBook/sliderthumb1" />
             <video id="video" className="slider-image" ref="vidRef" controls controlsList="nodownload noremote foobar">
-              <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
+              <source src="https://www.costcobusinessprinting.com/dynamic/Content/videos/Costco_BusinessPrinting_Intro.mp4" type="video/mp4" />
             </video>
             <div className="container">
               <div id="slider-image-book" className="slider-image" style={{ backgroundPositionY: this.state.bgPosition }}></div>
