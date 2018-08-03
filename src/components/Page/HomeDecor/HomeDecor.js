@@ -1,10 +1,62 @@
 import React, { Component } from 'react';
 
 import './HomeDecor.scss';
-
 class HomeDecor extends Component {
+    componentDidMount() {
+        this.scrollEvent();
+    }
+
+    scrollEvent() {
+        // init controller
+        var controller = new window.ScrollMagic.Controller();
+
+        var artCollection = function () {
+            var timeline = new window.TimelineMax({});
+            timeline.staggerFromTo(".home-decor .collection .tiles li", 0.8, { opacity: 0, y: 50 }, { opacity: 1, y: 0 }, 0.2, 0);
+        }
+
+        var scene3 = new window.ScrollMagic.Scene({
+            triggerElement: ".home-decor .collection",
+            triggerHook: 'onEnter',
+            offset: 200,
+            reverse: false
+        })
+        .setTween(artCollection)
+        .addTo(controller);
+
+        var featureProducts = function () {
+            var timeline = new window.TimelineMax({});
+            timeline.staggerFromTo(".home-decor .featured .tiles li", 0.8, { opacity: 0, y: 50 }, { opacity: 1, y: 0 }, 0.2, 0);
+        }
+
+        // ScrollMagic Defines
+        var scene2 = new window.ScrollMagic.Scene({
+            triggerElement: ".home-decor .featured",
+            triggerHook: 'onEnter',
+            offset: 200,
+            reverse: false
+        })
+        .setTween(featureProducts)
+        .addTo(controller);
+
+        var topSellers = function () {
+            var timeline = new window.TimelineMax({});
+            timeline.staggerFromTo(".home-decor .top-sellers .tiles li", 0.8, { opacity: 0, y: 50 }, { opacity: 1, y: 0 }, 0.2, 0);
+        }
+
+        var scene3 = new window.ScrollMagic.Scene({
+            triggerElement: ".home-decor .top-sellers",
+            triggerHook: 'onEnter',
+            offset: 200,
+            reverse: false
+        })
+        .setTween(topSellers)
+        .addTo(controller);
+    }
+
     render() {
         return (
+
             <div className="home-decor">
                 <main>
                     <div className="page-header">
@@ -52,7 +104,7 @@ class HomeDecor extends Component {
                     </div>
 
                     {/* Featured tiles */}
-                    <div className="featured">
+                    <div className="featured" id="scene2">
                         <div className="container">
                             <h2>Feature Canvas Designs</h2>
 
@@ -84,7 +136,7 @@ class HomeDecor extends Component {
 
 
                     {/* Top Sellers tiles */}
-                    <div className="top-sellers">
+                    <div className="top-sellers" id="scene3">
                         <div class="container">
                             <h2>Top Sellers: Art &amp; Image Galler</h2>
 
