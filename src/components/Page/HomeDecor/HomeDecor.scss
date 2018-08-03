@@ -8,3 +8,74 @@
         padding: 0 10px 20px;
     }
 }
+
+.tiles {
+    width: 1440px;
+    margin: 0 auto;
+    max-width: 1440px;
+    min-width: 1440px;
+    display: grid;
+    grid-gap: 20px;
+    list-style-type: none;
+    padding: 0 10px;
+    position: relative;
+
+    li {
+        background-color: #fff;
+        outline: 1px solid #aaa;
+        padding: 20px;
+        img {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        .title {
+            padding: 30px 0 10px;
+            font-size: 22px;
+        }
+        .product {
+            padding: 0 0 10px;
+        }
+        .price {
+            padding: 0 0 20px;
+        }
+        .cta {
+            background-color: #3071a9;
+            color: #fff;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            padding: 10px;
+        }
+    }
+}
+
+.collection {
+
+    .container {
+        .banner {
+            background-color: #eee;
+            height: 265px;
+            overflow: hidden;
+            padding: 60px 0 0;
+            position: relative;
+            width: 100%;
+
+            h2 {
+                font-size: 30px;
+                font-weight: normal;
+                text-align: center;
+            }
+            p {
+                max-width: 300px;
+                margin: 0 auto;
+                line-height: 1.5;
+                text-align: center;
+            }
+        }
+
+        .tiles {
+            margin: -70px auto 0;
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
