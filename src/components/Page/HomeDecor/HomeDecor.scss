@@ -67,9 +67,13 @@
     .container {
         .banner {
             background-color: #eee;
+            background-image: url('https://www.costcophotocenter.com/dynamic/en-us/AIG/Header/banner13');
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
             height: 265px;
             overflow: hidden;
-            padding: 60px 0 0;
+            padding: 50px 0 0;
             position: relative;
             width: 100%;
 
@@ -82,7 +86,7 @@
         }
 
         .tiles {
-            margin: -70px auto 0;
+            margin: -90px auto 0;
             grid-template-columns: repeat(4, 1fr);
             li {
                 -webkit-transition: box-shadow .35s ease, transform .35s ease;
@@ -91,6 +95,9 @@
                 &:hover {
                     -webkit-box-shadow: 0 25px 30px -20px rgba(0,0,0,.2);
                     box-shadow: 0 25px 30px -20px rgba(0,0,0,.2);
+                }
+                img {
+                    min-height: 300px;
                 }
             }
         }
@@ -113,6 +120,10 @@
                     box-shadow: 0 10px 30px rgba(0,0,0,.2);
                     -webkit-transform: translateY(-4px) !important;
                     transform: translateY(-4px) !important;
+                }
+
+                img {
+                    min-height: 400px;
                 }
             }
         }

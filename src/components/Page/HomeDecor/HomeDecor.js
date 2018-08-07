@@ -89,28 +89,28 @@ class HomeDecor extends Component {
                             </div>
                             <ul className="tiles">
                                 <li>
-                                    <img src="http://placehold.it/250x250" alt="" />
+                                    <img src="https://www.costcophotocenter.com/assets/en-US/ProductDetails/Art/ProductOptions/ArtCanvas/thumb" alt="" />
                                     <div className="title">Green armony</div>
                                     <div className="product">Canvas Print</div>
                                     <div className="price">Starting at $xx.xx</div>
                                     <a className="cta" href="#">Buy Canvas</a>
                                 </li>
                                 <li>
-                                    <img src="http://placehold.it/250x250" alt="" />
+                                    <img src="https://www.costcophotocenter.com/assets/en-US/ProductDetails/Art/ProductOptions/MetalPrints/thumb" alt="" />
                                     <div className="title">Watercolors</div>
                                     <div className="product">Metal Print</div>
                                     <div className="price">Starting at $xx.xx</div>
                                     <a className="cta" href="#">Buy Metal Print</a>
                                 </li>
                                 <li>
-                                    <img src="http://placehold.it/250x250" alt="" />
+                                    <img src="https://www.costcophotocenter.com/assets/en-US/ProductDetails/Art/ProductOptions/GalleryAcrylicPrints/thumb" alt="" />
                                     <div className="title">Happy forever</div>
                                     <div className="product">Acrylic Print</div>
                                     <div className="price">Starting at $xx.xx</div>
                                     <a className="cta" href="#">Buy Acrylic Print</a>
                                 </li>
                                 <li>
-                                    <img src="http://placehold.it/250x250" alt="" />
+                                    <img src="https://www.costcophotocenter.com/assets/en-US/ProductDetails/Mugs/ProductOptions/15ozColoredMug/thumb" alt="" />
                                     <div className="title">Forest</div>
                                     <div className="product">Photo Mug</div>
                                     <div className="price">Starting at $xx.xx</div>
@@ -129,21 +129,21 @@ class HomeDecor extends Component {
 
                             <ul className="tiles">
                                 <li>
-                                    <img src="http://placehold.it/250x250" alt="" />
+                                    <img src="https://www.costcophotocenter.com/assets/en-US/ProductDetails/Posters/ProductOptions/PosterBoards/thumb" alt="" />
                                     <div className="title">Green armony</div>
                                     <div className="product">Canvas Print</div>
                                     <div className="price">Starting at $xx.xx</div>
                                     <a className="cta" href="#">Buy Canvas</a>
                                 </li>
                                 <li>
-                                    <img src="http://placehold.it/250x250" alt="" />
+                                    <img src="https://www.costcophotocenter.com/assets/en-US/ProductDetails/Art/ProductOptions/ArtMulti/thumb" alt="" />
                                     <div className="title">Green armony</div>
                                     <div className="product">Canvas Print</div>
                                     <div className="price">Starting at $xx.xx</div>
                                     <a className="cta" href="#">Buy Canvas</a>
                                 </li>
                                 <li>
-                                    <img src="http://placehold.it/250x250" alt="" />
+                                    <img src="https://www.costcophotocenter.com/assets/en-US/ProductDetails/Art/ProductOptions/ArtPrints/thumb" alt="" />
                                     <div className="title">Happy forever</div>
                                     <div className="product">Canvas Print</div>
                                     <div className="price">Starting at $xx.xx</div>
@@ -163,56 +163,56 @@ class HomeDecor extends Component {
 
                             <ul className="tiles">
                                 <li>
-                                    <img src="http://placehold.it/250x250" alt="" />
+                                    <img src="https://www.costcophotocenter.com/assets/en-US/ProductDetails/AcrylicPrints/ProductOptions/AcrylicWallArt/thumb" alt="" />
                                     <div className="title">Seasons greetings</div>
                                     <div className="product">Canvas Print</div>
                                     <div className="price">Starting at $xx.xx</div>
                                     <a className="cta" href="#">Buy Canvas</a>
                                 </li>
                                 <li>
-                                    <img src="http://placehold.it/250x250" alt="" />
+                                    <img src="https://www.costcophotocenter.com/assets/en-US/ProductDetails/AcrylicPrints/ProductOptions/AcrylicWallArt/thumb" alt="" />
                                     <div className="title">Happy trees</div>
                                     <div className="product">Canvas Print</div>
                                     <div className="price">Starting at $xx.xx</div>
                                     <a className="cta" href="#">Buy Metal Print</a>
                                 </li>
                                 <li>
-                                    <img src="http://placehold.it/250x250" alt="" />
+                                    <img src="https://www.costcophotocenter.com/assets/en-US/ProductDetails/AcrylicPrints/ProductOptions/AcrylicWallArt/thumb" alt="" />
                                     <div className="title">Warm wishes</div>
                                     <div className="product">Canvas Print</div>
                                     <div className="price">Starting at $xx.xx</div>
                                     <a className="cta" href="#">Buy Acrylic Print</a>
                                 </li>
                                 <li>
-                                    <img src="http://placehold.it/250x250" alt="" />
+                                    <img src="https://www.costcophotocenter.com/assets/en-US/ProductDetails/AcrylicPrints/ProductOptions/AcrylicWallArt/thumb" alt="" />
                                     <div className="title">Winter cabins</div>
                                     <div className="product">Canvas Print</div>
                                     <div className="price">Starting at $xx.xx</div>
                                     <a className="cta" href="#">Customize Now</a>
                                 </li>
                                 <li>
-                                    <img src="http://placehold.it/250x250" alt="" />
+                                    <img src="https://www.costcophotocenter.com/assets/en-US/ProductDetails/AcrylicPrints/ProductOptions/AcrylicWallArt/thumb" alt="" />
                                     <div className="title">Seasons greetings</div>
                                     <div className="product">Canvas Print</div>
                                     <div className="price">Starting at $xx.xx</div>
                                     <a className="cta" href="#">Buy Canvas</a>
                                 </li>
                                 <li>
-                                    <img src="http://placehold.it/250x250" alt="" />
+                                    <img src="https://www.costcophotocenter.com/assets/en-US/ProductDetails/AcrylicPrints/ProductOptions/AcrylicWallArt/thumb" alt="" />
                                     <div className="title">Happy trees</div>
                                     <div className="product">Canvas Print</div>
                                     <div className="price">Starting at $xx.xx</div>
                                     <a className="cta" href="#">Buy Metal Print</a>
                                 </li>
                                 <li>
-                                    <img src="http://placehold.it/250x250" alt="" />
+                                    <img src="https://www.costcophotocenter.com/assets/en-US/ProductDetails/AcrylicPrints/ProductOptions/AcrylicWallArt/thumb" alt="" />
                                     <div className="title">Warm wishes</div>
                                     <div className="product">Canvas Print</div>
                                     <div className="price">Starting at $xx.xx</div>
                                     <a className="cta" href="#">Buy Acrylic Print</a>
                                 </li>
                                 <li>
-                                    <img src="http://placehold.it/250x250" alt="" />
+                                    <img src="https://www.costcophotocenter.com/assets/en-US/ProductDetails/AcrylicPrints/ProductOptions/AcrylicWallArt/thumb" alt="" />
                                     <div className="title">Winter cabins</div>
                                     <div className="product">Canvas Print</div>
                                     <div className="price">Starting at $xx.xx</div>
