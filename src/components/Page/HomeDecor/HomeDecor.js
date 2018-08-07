@@ -14,12 +14,12 @@ class HomeDecor extends Component {
         // init controller
         var controller = new window.ScrollMagic.Controller();
 
+        // Art Collection
         var artCollection = function () {
             var timeline = new window.TimelineMax({});
             timeline.staggerFromTo(".home-decor .collection .tiles li", 0.8, { opacity: 0, y: 50 }, { opacity: 1, y: 0 }, 0.2, 0);
         }
-
-        var scene3 = new window.ScrollMagic.Scene({
+        var scene1 = new window.ScrollMagic.Scene({
             triggerElement: ".home-decor .collection",
             triggerHook: 'onEnter',
             offset: 200,
@@ -28,12 +28,11 @@ class HomeDecor extends Component {
         .setTween(artCollection)
         .addTo(controller);
 
+        // Featured Products
         var featureProducts = function () {
             var timeline = new window.TimelineMax({});
             timeline.staggerFromTo(".home-decor .featured .tiles li", 0.8, { opacity: 0, y: 50 }, { opacity: 1, y: 0 }, 0.2, 0);
         }
-
-        // ScrollMagic Defines
         var scene2 = new window.ScrollMagic.Scene({
             triggerElement: ".home-decor .featured",
             triggerHook: 'onEnter',
@@ -43,12 +42,26 @@ class HomeDecor extends Component {
         .setTween(featureProducts)
         .addTo(controller);
 
+        // Shop By Products
+        var shopBy = function () {
+            var timeline = new window.TimelineMax({});
+            timeline.staggerFromTo(".home-decor .shop-by-products .products_list li", 0.8, { opacity: 0, y: 50 }, { opacity: 1, y: 0 }, 0.2, 0);
+        }
+        var scene3 = new window.ScrollMagic.Scene({
+            triggerElement: ".home-decor .shop-by-products",
+            triggerHook: 'onEnter',
+            offset: 200,
+            reverse: false
+        })
+        .setTween(shopBy)
+        .addTo(controller);
+
+        // Top Sellers
         var topSellers = function () {
             var timeline = new window.TimelineMax({});
             timeline.staggerFromTo(".home-decor .top-sellers .tiles li", 0.8, { opacity: 0, y: 50 }, { opacity: 1, y: 0 }, 0.2, 0);
         }
-
-        var scene3 = new window.ScrollMagic.Scene({
+        var scene4 = new window.ScrollMagic.Scene({
             triggerElement: ".home-decor .top-sellers",
             triggerHook: 'onEnter',
             offset: 200,
