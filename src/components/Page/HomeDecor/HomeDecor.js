@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 
 import './HomeDecor.scss';
+import ShopByProducts from './ShopByProducts/ShopByProducts';
+import BannerBehind from './BannerBehind/BannerBehind';
+import BannerMkting from './BannerMkting/BannerMkting';
+
 class HomeDecor extends Component {
     componentDidMount() {
         this.scrollEvent();
@@ -103,6 +107,8 @@ class HomeDecor extends Component {
                         </div>
                     </div>
 
+                    <BannerMkting />
+
                     {/* Featured tiles */}
                     <div className="featured" id="scene2">
                         <div className="container">
@@ -134,6 +140,8 @@ class HomeDecor extends Component {
                         </div>
                     </div>
 
+                    <ShopByProducts />
+                    <BannerBehind />
 
                     {/* Top Sellers tiles */}
                     <div className="top-sellers" id="scene3">
@@ -200,7 +208,6 @@ class HomeDecor extends Component {
                             </ul>
                         </div>
                     </div>
-
                 </main>
             </div>
         );
