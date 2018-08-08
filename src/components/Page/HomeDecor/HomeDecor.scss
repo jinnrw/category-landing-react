@@ -89,8 +89,8 @@
             margin: -90px auto 0;
             grid-template-columns: repeat(4, 1fr);
             li {
-                -webkit-transition: box-shadow .35s ease, transform .35s ease;
-                transition: box-shadow .35s ease, transform .35s ease, opacity .6s linear;
+                -webkit-transition: box-shadow .35s ease;
+                transition: box-shadow .35s ease;
                 will-change: transform, opacity;
                 &:hover {
                     -webkit-box-shadow: 0 25px 30px -20px rgba(0,0,0,.2);
@@ -137,8 +137,8 @@
         .tiles {
             grid-template-columns: repeat(4, 1fr);
             li {
-                -webkit-transition: box-shadow .35s ease, transform .35s ease;
-                transition: box-shadow .35s ease, transform .35s ease, opacity .6s linear;
+                -webkit-transition: box-shadow .35s ease;
+                transition: box-shadow .35s ease;
                 will-change: transform, opacity;
                 &:hover {
                     -webkit-box-shadow: 0 25px 30px -20px rgba(0,0,0,.2);
@@ -243,6 +243,8 @@
     border: 1px solid #CCCCCC;
     transition: box-shadow .35s ease;
     will-change: transform, opacity;
+    opacity: 0;
+    
     &:hover {
         box-shadow: 0 25px 30px -20px rgba(0, 0, 0, .2);
     }

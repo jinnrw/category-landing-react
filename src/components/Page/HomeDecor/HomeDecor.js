@@ -31,7 +31,7 @@ class HomeDecor extends Component {
         // Featured Products
         var featureProducts = function () {
             var timeline = new window.TimelineMax({});
-            timeline.staggerFromTo(".home-decor .featured .tiles li", 0.8, { opacity: 0, y: 50 }, { opacity: 1, y: 0 }, 0.2, 0);
+            timeline.staggerFromTo(".home-decor .featured .tiles li", 0.8, { opacity: 0 }, { opacity: 1 }, 0.2, 0);
         }
         var scene2 = new window.ScrollMagic.Scene({
             triggerElement: ".home-decor .featured",
