@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import './HomeDecor.scss';
-import ShopByProducts from './ShopByProducts/ShopByProducts';
+import ShopByProducts2 from './ShopByProducts2/ShopByProducts2';
 import BannerBehind from './BannerBehind/BannerBehind';
 import BannerMkting from './BannerMkting/BannerMkting';
 
@@ -45,10 +45,10 @@ class HomeDecor extends Component {
         // Shop By Products
         var shopBy = function () {
             var timeline = new window.TimelineMax({});
-            timeline.staggerFromTo(".home-decor .shop-by-products .products_list li", 0.8, { opacity: 0, y: 50 }, { opacity: 1, y: 0 }, 0.2, 0);
+            timeline.staggerFromTo(".home-decor .shop-by-products2 li", 0.8, { opacity: 0 }, { opacity: 1 }, 0.2, 0);
         }
         var scene3 = new window.ScrollMagic.Scene({
-            triggerElement: ".home-decor .shop-by-products",
+            triggerElement: ".home-decor .shop-by-products2",
             triggerHook: 'onEnter',
             offset: 200,
             reverse: false
@@ -153,7 +153,7 @@ class HomeDecor extends Component {
                         </div>
                     </div>
 
-                    <ShopByProducts />
+                    <ShopByProducts2 />
                     <BannerBehind />
 
                     {/* Top Sellers tiles */}

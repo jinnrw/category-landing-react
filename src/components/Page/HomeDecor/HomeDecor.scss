@@ -106,7 +106,7 @@
 
 .featured {
     .container {
-        margin-bottom: 120px;
+        margin-bottom: 60px;
         padding: 60px 0 0;
 
         .tiles {
@@ -244,7 +244,7 @@
     transition: box-shadow .35s ease;
     will-change: transform, opacity;
     opacity: 0;
-    
+
     &:hover {
         box-shadow: 0 25px 30px -20px rgba(0, 0, 0, .2);
     }
@@ -285,3 +285,251 @@
         color: #fff;
     }
 }
+
+.shop-by-products2 {
+    margin: 0 auto 75px;
+    max-width: 1440px;
+    min-width: 0;
+    padding: 0 10px;
+    width: 100%;
+    ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 16px;
+        padding: 0;
+        border: 1px solid #ccc;
+        min-height: 600px;
+        li {
+            text-align: center;
+            place-self: center;
+        }
+    }
+
+    
+}
+
+.shop-hotspots {
+    position: relative;
+
+    .background {
+        display: block;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+        opacity: 0;  /* make things invisible upon start */
+        -webkit-animation: fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+        -moz-animation: fadeIn ease-in 1;
+        animation: fadeIn ease-in 1;
+
+        -webkit-animation-fill-mode: forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+        -moz-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
+        -webkit-animation-duration: 0.7s;
+        -moz-animation-duration: 0.7s;
+        animation-duration: 0.7s;
+        z-index: 1;
+    }
+
+    &:hover .hotspot {
+        /* animation-name: bounceIn; */
+    }
+
+    .hotspot {
+        animation-name: bounceIn;
+        animation-duration: 450ms;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        height: 75px;
+        /* opacity: 0; */
+        position: absolute;
+        -webkit-transition: opacity .5s ease;
+        transition: opacity .5s ease;
+        width: 75px;
+        z-index: 1;
+
+        &.hs1 {
+            left: 20%;
+            top: 55%;
+            .hotspot-modal {
+                left: -50%;
+                top: -90px;
+                &:after {
+                    left: 43%;
+                    bottom: -10px;
+                }
+            }
+        }
+        &.hs2 {
+            animation-delay: 0.25s;
+            left: 40%;
+            bottom: 26%;
+            .hotspot-modal {
+                right: -50%;
+                top: -90px;
+                &:after {
+                    left: 43%;
+                    bottom: -10px;
+                }
+            }
+        }
+        &.hs3 {
+            animation-delay: 0.5s;
+            right: 27%;
+            top: 40%;
+            .hotspot-modal {
+                right: -50%;
+                top: -90px;
+                &:after {
+                    left: 43%;
+                    bottom: -10px;
+                }
+            }
+        }
+        &.hs4 {
+            animation-delay: 0.75s;
+            right: 3%;
+            top: 48%;
+            .hotspot-modal {
+                right: -50%;
+                top: -90px;
+                &:after {
+                    left: 43%;
+                    bottom: -10px;
+                }
+            }
+        }
+
+        .dot-ref {
+            height: 100%;
+            width: 100%;
+            position: relative;
+            cursor: default;
+
+            &:hover .dot {
+                background-color: #0060a8;
+            }
+            .dot {
+                background-color: #fff;
+                border-radius: 50%;
+                box-shadow: 0 0 0 10px rgba(255,255,255,0.5), 0 0 0 3px rgba(255,255,255,1), 0 0 10px 5px rgba(0,0,0,0.8);
+                height: 30px;
+                left: 50%;
+                position: absolute;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 30px;
+            }
+        }
+
+        .hotspot-modal {
+            background-color: #fff;
+            box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+            opacity: 0;
+            position: absolute;
+            text-align: left;
+            min-width: 150px;
+            z-index: 2;
+            -webkit-transition: opacity .5s ease;
+            transition: opacity .5s ease;
+            pointer-events: none;
+            &:after {
+                background-color: #fff;
+                content: '';
+                display: block;
+                height: 20px;
+                width: 20px;
+                position: absolute;
+                transform: rotate(45deg);
+                z-index: -1;
+            }
+            .details {
+                padding: 20px;
+                text-align: center;
+                span {
+                    display: block;
+                    padding-bottom: 5px;
+                }
+                a {
+                    color: #3071a9;
+                    display: block;
+                }
+            }
+        }
+        &:hover .hotspot-modal {
+            animation-name: bounceInModal;
+            animation-duration: 450ms;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+            opacity: 1;
+            pointer-events: initial;
+
+        }
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn{
+    0%{
+      opacity: 0;
+      transform: scale(0.3) translate3d(0,0,0);
+    }
+    50%{
+      opacity: 0.9;
+      transform: scale(3);
+    }
+    80%{
+      opacity: 1;
+      transform: scale(0.89);
+    }
+    100%{
+      opacity: 1;
+      transform: scale(1) translate3d(0,0,0);
+    }
+  }
+
+  @keyframes bounceInModal{
+    0%{
+      opacity: 0;
+      transform: scale(0.3) translate3d(0,0,0);
+    }
+    50%{
+      opacity: 0.9;
+      transform: scale(1.1);
+    }
+    80%{
+      opacity: 1;
+      transform: scale(0.95);
+    }
+    100%{
+      opacity: 1;
+      transform: scale(1) translate3d(0,0,0);
+    }
+  }
+
+  @keyframes bounceInModalImage{
+    0%{
+      opacity: 0;
+      transform: scale(0.3) translateY(160px);
+    }
+    50%{
+      opacity: 0.9;
+      transform: scale(1.1);
+    }
+    80%{
+      opacity: 1;
+      transform: scale(0.95);
+    }
+    100%{
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+  }
