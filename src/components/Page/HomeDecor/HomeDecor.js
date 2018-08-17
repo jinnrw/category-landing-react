@@ -45,7 +45,7 @@ class HomeDecor extends Component {
         // Shop By Products
         var shopBy = function () {
             var timeline = new window.TimelineMax({});
-            timeline.staggerFromTo(".home-decor .shop-by-products2 li", 0.8, { opacity: 0 }, { opacity: 1 }, 0.2, 0);
+            timeline.staggerFromTo(".home-decor .shop-by-products2", 0.8, { opacity: 0 }, { opacity: 1 }, 0.2, 0);
         }
         var scene3 = new window.ScrollMagic.Scene({
             triggerElement: ".home-decor .shop-by-products2",

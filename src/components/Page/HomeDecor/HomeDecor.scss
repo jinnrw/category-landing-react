@@ -292,16 +292,16 @@
     min-width: 0;
     padding: 0 10px;
     width: 100%;
+    opacity: 0;
     ul {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 16px;
+        grid-gap: 0;
         padding: 0;
         border: 1px solid #ccc;
-        min-height: 600px;
         li {
             text-align: center;
-            place-self: center;
+            place-self: center stretch;
         }
     }
 
@@ -329,6 +329,9 @@
         -moz-animation-duration: 0.7s;
         animation-duration: 0.7s;
         z-index: 1;
+        img {
+            display: block;
+        }
     }
 
     &:hover .hotspot {
