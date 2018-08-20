@@ -93,6 +93,7 @@ class HomeDecor extends Component {
                                     <div className="title">Green armony</div>
                                     <div className="product">Canvas Print</div>
                                     <div className="price">Starting at $xx.xx</div>
+                                    <div className="ready">Ready to buy</div>
                                     <a className="cta" href="#">Buy Canvas</a>
                                 </li>
                                 <li>
@@ -100,6 +101,7 @@ class HomeDecor extends Component {
                                     <div className="title">Watercolors</div>
                                     <div className="product">Metal Print</div>
                                     <div className="price">Starting at $xx.xx</div>
+                                    <div className="ready">Ready to buy</div>
                                     <a className="cta" href="#">Buy Metal Print</a>
                                 </li>
                                 <li>
@@ -107,6 +109,7 @@ class HomeDecor extends Component {
                                     <div className="title">Happy forever</div>
                                     <div className="product">Acrylic Print</div>
                                     <div className="price">Starting at $xx.xx</div>
+                                    <div className="misc">Art + Your Photo</div>
                                     <a className="cta" href="#">Buy Acrylic Print</a>
                                 </li>
                                 <li>
@@ -114,6 +117,7 @@ class HomeDecor extends Component {
                                     <div className="title">Forest</div>
                                     <div className="product">Photo Mug</div>
                                     <div className="price">Starting at $xx.xx</div>
+                                    <div className="misc">Art + Your Photo</div>
                                     <a className="cta" href="#">Customize Now</a>
                                 </li>
                             </ul>
@@ -133,6 +137,7 @@ class HomeDecor extends Component {
                                     <div className="title">Green armony</div>
                                     <div className="product">Canvas Print</div>
                                     <div className="price">Starting at $xx.xx</div>
+                                    <div className="ready">Ready to buy</div>
                                     <a className="cta" href="#">Buy Canvas</a>
                                 </li>
                                 <li>
@@ -140,6 +145,7 @@ class HomeDecor extends Component {
                                     <div className="title">Green armony</div>
                                     <div className="product">Canvas Print</div>
                                     <div className="price">Starting at $xx.xx</div>
+                                    <div className="ready">Ready to buy</div>
                                     <a className="cta" href="#">Buy Canvas</a>
                                 </li>
                                 <li>
@@ -147,6 +153,7 @@ class HomeDecor extends Component {
                                     <div className="title">Happy forever</div>
                                     <div className="product">Canvas Print</div>
                                     <div className="price">Starting at $xx.xx</div>
+                                    <div className="ready">Ready to buy</div>
                                     <a className="cta" href="#">Customize Now</a>
                                 </li>
                             </ul>
@@ -167,6 +174,7 @@ class HomeDecor extends Component {
                                     <div className="title">Seasons greetings</div>
                                     <div className="product">Canvas Print</div>
                                     <div className="price">Starting at $xx.xx</div>
+                                    <div className="ready">Ready to buy</div>
                                     <a className="cta" href="#">Buy Canvas</a>
                                 </li>
                                 <li>
@@ -174,6 +182,7 @@ class HomeDecor extends Component {
                                     <div className="title">Happy trees</div>
                                     <div className="product">Canvas Print</div>
                                     <div className="price">Starting at $xx.xx</div>
+                                    <div className="ready">Ready to buy</div>
                                     <a className="cta" href="#">Buy Metal Print</a>
                                 </li>
                                 <li>
@@ -181,6 +190,7 @@ class HomeDecor extends Component {
                                     <div className="title">Warm wishes</div>
                                     <div className="product">Canvas Print</div>
                                     <div className="price">Starting at $xx.xx</div>
+                                    <div className="ready">Ready to buy</div>
                                     <a className="cta" href="#">Buy Acrylic Print</a>
                                 </li>
                                 <li>
@@ -188,6 +198,7 @@ class HomeDecor extends Component {
                                     <div className="title">Winter cabins</div>
                                     <div className="product">Canvas Print</div>
                                     <div className="price">Starting at $xx.xx</div>
+                                    <div className="ready">Ready to buy</div>
                                     <a className="cta" href="#">Customize Now</a>
                                 </li>
                                 <li>
@@ -195,6 +206,7 @@ class HomeDecor extends Component {
                                     <div className="title">Seasons greetings</div>
                                     <div className="product">Canvas Print</div>
                                     <div className="price">Starting at $xx.xx</div>
+                                    <div className="ready">Ready to buy</div>
                                     <a className="cta" href="#">Buy Canvas</a>
                                 </li>
                                 <li>
@@ -202,6 +214,7 @@ class HomeDecor extends Component {
                                     <div className="title">Happy trees</div>
                                     <div className="product">Canvas Print</div>
                                     <div className="price">Starting at $xx.xx</div>
+                                    <div className="ready">Ready to buy</div>
                                     <a className="cta" href="#">Buy Metal Print</a>
                                 </li>
                                 <li>
@@ -209,6 +222,7 @@ class HomeDecor extends Component {
                                     <div className="title">Warm wishes</div>
                                     <div className="product">Canvas Print</div>
                                     <div className="price">Starting at $xx.xx</div>
+                                    <div className="ready">Ready to buy</div>
                                     <a className="cta" href="#">Buy Acrylic Print</a>
                                 </li>
                                 <li>
@@ -216,6 +230,7 @@ class HomeDecor extends Component {
                                     <div className="title">Winter cabins</div>
                                     <div className="product">Canvas Print</div>
                                     <div className="price">Starting at $xx.xx</div>
+                                    <div className="ready">Ready to buy</div>
                                     <a className="cta" href="#">Customize Now</a>
                                 </li>
                             </ul>
