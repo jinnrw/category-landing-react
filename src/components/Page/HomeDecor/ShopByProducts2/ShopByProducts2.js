@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import hotspotbkg from '../ShopByProducts2/ShopByProduct.png';
+import hotspotbkg from '../ShopByProducts2/ShopByProduct_Banner_v3.png';
 
 class ShopByProducts2 extends Component {
   render() {
@@ -9,7 +9,7 @@ class ShopByProducts2 extends Component {
         <ul>
           <li>
             <h2 className="title">Shop By Products</h2>
-            <p>Have a look through our exclusive variety of products.</p>
+            <p className="cap">Brighten up your home with trendy illustrations and vibrant artwork on a variety of great products.</p>
             <p><strong>Select one of products in the image</strong></p>
           </li>
           <li>
@@ -22,6 +22,7 @@ class ShopByProducts2 extends Component {
                   <div className="hotspot-modal">
                           <div className="details">
                               <span>Framed prints</span>
+                              <span><strong>Starting at $xx.xx</strong></span>
                               <a href="">View more</a>
                           </div>
                   </div>
@@ -33,6 +34,7 @@ class ShopByProducts2 extends Component {
                   <div className="hotspot-modal">
                           <div className="details">
                               <span>Photo mugs</span>
+                              <span><strong>Starting at $xx.xx</strong></span>
                               <a href="">View more</a>
                           </div>
                   </div>
@@ -43,7 +45,8 @@ class ShopByProducts2 extends Component {
                   </div>
                   <div className="hotspot-modal">
                           <div className="details">
-                              <span>Canvas prints</span>
+                              <span>Photo throws</span>
+                              <span><strong>Starting at $xx.xx</strong></span>
                               <a href="">View more</a>
                           </div>
                   </div>
@@ -54,7 +57,20 @@ class ShopByProducts2 extends Component {
                   </div>
                   <div className="hotspot-modal">
                           <div className="details">
+                              <span>Canvas prints</span>
+                              <span><strong>Starting at $xx.xx</strong></span>
+                              <a href="">View more</a>
+                          </div>
+                  </div>
+              </div>
+              <div className="hotspot hs5">
+                  <div className="dot-ref">
+                      <div className="dot"></div>
+                  </div>
+                  <div className="hotspot-modal">
+                          <div className="details">
                               <span>Acrylic prints</span>
+                              <span><strong>Starting at $xx.xx</strong></span>
                               <a href="">View more</a>
                           </div>
                   </div>

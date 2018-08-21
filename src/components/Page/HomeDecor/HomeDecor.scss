@@ -303,14 +303,21 @@
     width: 100%;
     opacity: 0;
     ul {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 0;
+        // display: grid;
+        // grid-template-columns: repeat(2, 1fr);
+        // grid-gap: 0;
         padding: 0;
-        border: 1px solid #ccc;
+        // border: 1px solid #ccc;
         li {
             text-align: center;
             place-self: center stretch;
+            .cap {
+                max-width: 490px;
+                display: block;
+                margin: 0 auto;
+                line-height: 25px;
+                padding-bottom: 15px;
+            }
         }
     }
 
@@ -361,11 +368,11 @@
         z-index: 1;
 
         &.hs1 {
-            left: 20%;
-            top: 55%;
+            left: 14%;
+            top: 50%;
             .hotspot-modal {
-                left: -50%;
-                top: -90px;
+                left: -59px;
+                top: -110px;
                 &:after {
                     left: 43%;
                     bottom: -10px;
@@ -374,11 +381,11 @@
         }
         &.hs2 {
             animation-delay: 0.25s;
-            left: 40%;
-            bottom: 26%;
+            left: 26%;
+            bottom: 28%;
             .hotspot-modal {
-                right: -50%;
-                top: -90px;
+                left: -59px;
+                top: -110px;
                 &:after {
                     left: 43%;
                     bottom: -10px;
@@ -387,11 +394,11 @@
         }
         &.hs3 {
             animation-delay: 0.5s;
-            right: 27%;
-            top: 40%;
+            right: 45%;
+            bottom: 19%;
             .hotspot-modal {
-                right: -50%;
-                top: -90px;
+                left: -59px;
+                top: -110px;
                 &:after {
                     left: 43%;
                     bottom: -10px;
@@ -400,11 +407,24 @@
         }
         &.hs4 {
             animation-delay: 0.75s;
-            right: 3%;
-            top: 48%;
+            right: 30%;
+            top: 20%;
             .hotspot-modal {
-                right: -50%;
-                top: -90px;
+                left: -59px;
+                top: 81px;
+                &:after {
+                    left: 44%;
+                    top: -10px;
+                }
+            }
+        }
+        &.hs5 {
+            animation-delay: 0.75s;
+            right: 23%;
+            bottom: 33%;
+            .hotspot-modal {
+                left: -59px;
+                top: -110px;
                 &:after {
                     left: 43%;
                     bottom: -10px;
@@ -440,7 +460,7 @@
             opacity: 0;
             position: absolute;
             text-align: left;
-            min-width: 150px;
+            min-width: 200px;
             z-index: 2;
             -webkit-transition: opacity .5s ease;
             transition: opacity .5s ease;
