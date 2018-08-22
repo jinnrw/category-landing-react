@@ -355,10 +355,10 @@
     }
 
     .hotspot {
-        animation-name: bounceIn;
-        animation-duration: 450ms;
-        animation-timing-function: linear;
-        animation-fill-mode: forwards;
+        // animation-name: bounceIn;
+        // animation-duration: 450ms;
+        // animation-timing-function: linear;
+        // animation-fill-mode: forwards;
         height: 75px;
         /* opacity: 0; */
         position: absolute;
@@ -438,9 +438,6 @@
             position: relative;
             cursor: default;
 
-            &:hover .dot {
-                background-color: #0060a8;
-            }
             .dot {
                 background-color: #fff;
                 border-radius: 50%;
@@ -451,6 +448,40 @@
                 top: 50%;
                 transform: translate(-50%, -50%);
                 width: 30px;
+                &:before {
+                    background-color: #ccc;
+                    content: '';
+                    display: block;
+                    height: 2px;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translateX(-50%);
+                    transform-origin: 50% 50%;
+                    transition: transform .2s ease;
+                    width: 60%;
+                }
+                &:after {
+                    background-color: #ccc;
+                    content: '';
+                    display: block;
+                    height: 2px;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translateX(-50%) rotate(90deg);
+                    transform-origin: 50% 50%;
+                    transition: transform .2s ease;
+                    width: 60%;
+                }
+            }
+            &:hover .dot {
+                &:before {
+                    transform: translateX(-50%) rotate(45deg);
+                }
+                &:after {
+                    transform: translateX(-50%) rotate(135deg);
+                }
             }
         }
 

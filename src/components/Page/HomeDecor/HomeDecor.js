@@ -43,9 +43,29 @@ class HomeDecor extends Component {
         .addTo(controller);
 
         // Shop By Products
+        // var shopBy = function () {
+        //     var timeline = new window.TimelineMax({});
+        //     timeline.staggerFromTo(".home-decor .shop-by-products2", 0.8, { opacity: 0 }, { opacity: 1 }, 0.2, 0);
+        // }
+        // var scene3 = new window.ScrollMagic.Scene({
+        //     triggerElement: ".home-decor .shop-by-products2",
+        //     triggerHook: 'onEnter',
+        //     offset: 200,
+        //     reverse: false
+        // })
+        // .setTween(shopBy)
+        // .addTo(controller);
         var shopBy = function () {
-            var timeline = new window.TimelineMax({});
-            timeline.staggerFromTo(".home-decor .shop-by-products2", 0.8, { opacity: 0 }, { opacity: 1 }, 0.2, 0);
+            var timeline = new window.TimelineMax({yoyo: true});
+            var el1 = ".home-decor .shop-by-products2 .hotspot.hs1";
+            var el2 = ".home-decor .shop-by-products2 .hotspot.hs2";
+            var el3 = ".home-decor .shop-by-products2 .hotspot.hs3";
+            var el4 = ".home-decor .shop-by-products2 .hotspot.hs4";
+            var el5 = ".home-decor .shop-by-products2 .hotspot.hs5";
+            var elArray = [el1, el2, el3, el4, el5];
+
+            timeline.staggerFromTo(".home-decor .shop-by-products2", 0.5, { opacity: 0 }, { opacity: 1 }, 0.2, 0);
+            timeline.staggerFromTo(elArray, 0.3, { transform: 'scale(.10)' }, { transform: 'scale(1)' }, 0.5, 1);
         }
         var scene3 = new window.ScrollMagic.Scene({
             triggerElement: ".home-decor .shop-by-products2",
